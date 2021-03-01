@@ -36,7 +36,7 @@ function createCard(title, text_name, img_src) {
     return card
 }
 
-function update_page(json_obj){
+function update_page(destination,json_obj){
     step_count = destination
     while (table.hasChildNodes()) {
         table.removeChild(node.lastChild);
@@ -48,7 +48,7 @@ function update_page(json_obj){
 
 }
 
-function createButton(text, json_obj){
+function createButton(text, destination, json_obj){
     const button = document.createElement('button');
     button.textContent = text
     button.onclick = update_page(json_obj);
@@ -72,7 +72,7 @@ function generatePage(json_obj){
     if(count >= 1){
         var i;
         for (i in step_edges){
-        button_table.appendChild(createButton(i["Text"], json_obj))
+        button_table.appendChild(createButton(i["Text"], i["Destination"], json_obj))
     }
     
 }
