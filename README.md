@@ -9,14 +9,14 @@ Based on the flowchart of the same name posted by lukeatlook,this project aims t
 * to fix potential graphical errors on mobile platforms
 
 ***
-### q&a:
+### Q&A:
 
 Q: is this good code? Should I base my own project on the program used in this repo?
 
 A: no, don't use this code. It was quickly put together by a developer who hasn't touched HTML, Bootstrap, CSS, or JavaScript for 5 years.
 ***
 Q: will you be updating this flowchart every season?
-***
+
 A: yes! To the best of my ability, though help is always welcome!
 ***
 Q: where is the webpage?
