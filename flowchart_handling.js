@@ -20,7 +20,7 @@ oReq.send();
 function createCard(title, text_name, img_src) {
     
     const align = document.createElement("div")
-    align.className = "col-sm-1 col-md-4"
+    align.className = "col-sm-1 col-md-4 mb-5"
     const card = document.createElement('div');
     card.className = "card";
     const cardBody = document.createElement("div");
