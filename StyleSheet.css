@@ -96,7 +96,7 @@ body {
   margin: 10px;
 }
 
-#recommends, #choices {
+#recommends{
   margin-left: auto;
   margin-right: auto;
 }
@@ -112,11 +112,6 @@ body {
 
 #card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.card-img-top {
-  width: 300px;
-  object-fit: cover;
 }
 
 /* minimun width to be shown properly, due to width of recommends + body margin */
