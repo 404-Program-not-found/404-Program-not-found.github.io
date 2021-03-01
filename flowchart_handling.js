@@ -36,7 +36,7 @@ function createCard(title, text_name, img_src) {
     return card
 }
 
-function update_page(destination,json_obj){
+function update_page(destination, json_obj){
     step_count = destination
     while (table.hasChildNodes()) {
         table.removeChild(node.lastChild);
