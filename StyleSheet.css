@@ -42,7 +42,7 @@
   align-items: center;
 }
 
-#choices{
+.buttonChoices{
   justify-content: center;
   align-items: center;
   background-color: #4CAF50; /* Green */
