@@ -33,6 +33,7 @@
 
 .main {
   margin-top: 60px;
+  margin-bottom: 134px;
 }
 
 #mainTitle{
@@ -68,7 +69,6 @@
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1rem;
   background-color: white;
   border-top: 1px solid #e6e6e6;
   font-size: smaller;
