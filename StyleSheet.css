@@ -66,7 +66,7 @@
 .footer {
   background-color: white;
   border-top: 1px solid #e6e6e6;
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -82,7 +82,7 @@
 }
 
 .cell{
-  display:table-cell;
+  display:block;
 }
 
 #recommends {
@@ -138,4 +138,10 @@
   padding: 5px;
   border-radius: 0 0 5px 5px;
   
+}
+
+@media screen and (min-width:986px){ /* minimun width to be shown properly, due to width of recommends + body margin */
+  .cell{
+    display:table-cell
+  }
 }
