@@ -58,21 +58,19 @@ function createButton(text, destination, json_obj){
 }
 
 function generatePage(json_obj){
-    var step_dict = json_obj["Nodes"][step_count]
-    var step_edges = json_obj["Edges"][step_count]
-    var count = Object.keys(step_dict).length;
-    if(count > 1){
+    var step_dict = step_count in json_obj["Nodes"]? json_obj["Nodes"][step_count]:NaN
+    var step_edges = step_count in json_obj["Edges"]? json_obj["Edges"][step_count]:NaN
+    if(step_dict != NaN){
         var i;
         for (i in step_dict.slice(1)){
         table.appendChild(createCard(i[0], i[1], i[2]))
     } 
 }
-    var count = Object.keys(step_edges).length;
-    if(count >= 1){
+    if(step_edges != NaN){
         for (var key in step_edges){
         button_table.appendChild(createButton(step_edges[key]["Text"], step_edges[key]["Destination"], json_obj))
     }
-    document.getElementById("mainTitle").textContent = step_dict["Title"];
+    document.getElementById("mainTitle").textContent = json_obj["Title"][step_count];
     
 }
 }
