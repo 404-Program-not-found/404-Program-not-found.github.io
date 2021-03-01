@@ -3,6 +3,10 @@
   font-family: Arial, Helvetica, sans-serif
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
 
 /*Top navigation bar style*/
 .topnav {
@@ -34,6 +38,7 @@
 .main {
   margin-top: 60px;
   margin-bottom: 134px;
+  flex: 1 0 auto;
 }
 
 #mainTitle{
@@ -65,9 +70,8 @@
 
 /*Footer style*/
 .footer {
-  position: absolute;
+  flex-shrink: 0;
   right: 0;
-  bottom: 0;
   left: 0;
   background-color: white;
   border-top: 1px solid #e6e6e6;
