@@ -52,7 +52,8 @@ function createButton(text, destination, json_obj){
     const button = document.createElement('button');
     button.textContent = text
     button.onclick = function() {update_page(destination, json_obj)};
-    button.className = "buttonChoices"
+    button.className = "cell"
+    button_table.id = "buttonChoices"
     return button
 
 }
