@@ -89,7 +89,8 @@ body {
 }
 
 .align-horizontal > div{
-  margin: inline imp !important;
+  box-sizing: border-box;
+  margin: inline-block imp !important;
 }
 
 .center-children{
