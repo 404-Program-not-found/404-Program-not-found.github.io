@@ -60,7 +60,6 @@ function createButton(text, destination, json_obj){
 function generatePage(json_obj){
     var step_dict = json_obj["Nodes"][step_count]
     var step_edges = json_obj["Edges"][step_count]
-    document.getElementById("mainTitle").textContent = step_dict["Title"];
     var count = Object.keys(step_dict).length;
     if(count > 1){
         var i;
@@ -71,9 +70,10 @@ function generatePage(json_obj){
     var count = Object.keys(step_edges).length;
     if(count >= 1){
         var i;
-        for (i in step_edges){
+        for (i in Object.values(step_edges)){
         button_table.appendChild(createButton(i["Text"], i["Destination"], json_obj))
     }
+    document.getElementById("mainTitle").textContent = step_dict["Title"];
     
 }
 }
