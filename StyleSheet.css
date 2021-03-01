@@ -105,10 +105,8 @@ body {
 #card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  min-width: 250px;
-  min-height: 250px;
-  max-width: 300px;
-  max-height: 350px;
+  width: 18rem;
+  height: 20rem;
 }
 
 
@@ -117,7 +115,7 @@ body {
 }
 
 .card-img-top {
-  width: 300px;
+  width: 18rem;
   height: 15vw;
   object-fit: cover;
 }
