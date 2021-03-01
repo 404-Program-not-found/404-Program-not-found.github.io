@@ -57,7 +57,7 @@ function createButton(destination, text){
 
 }
 
-function generatePage(json_obj)
+function generatePage(json_obj){
     var step_dict = json_obj["Nodes"][step_count]
     var step_edges = json_obj["Edges"][step_count]
     document.getElementById("mainTitle").textContent = step_dict["Title"];
@@ -67,7 +67,7 @@ function generatePage(json_obj)
         for (i in step_dict.slice(1)){
         table.appendChild(createCard(i[0], i[1], i[2]))
     } 
-}
+}}
     
 
     var count = Object.keys(step_edges).length;
