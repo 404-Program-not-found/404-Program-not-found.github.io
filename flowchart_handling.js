@@ -1,11 +1,14 @@
 console.log("Cards is being generated...");
 const table = document.getElementById('recommends');
+const button_table = document.getElementById('choices')
 
 console.log(table);
 
+var step_count = "1"
+
 function reqListener () {
     var obj = JSON.parse(this.responseText);
-    document.getElementById("mainTitle").textContent = obj["Nodes"]["1"]["Title"]
+    generatePage(obj)
 }
 
 var oReq = new XMLHttpRequest();
@@ -27,14 +30,51 @@ function createCard(title, text_name, img_src) {
     const bottomImage = document.createElement("div");
     bottomImage.innerHTML = `<img src= ${img_src} class="cardImage">`;
     bottomImage.className = "bottomImage"
-    card.append(textTitle)
+    card.append(textTitle);
     card.append(bottomImage);
     card.append(topName);
     return card
 }
 
+function update_page(destination){
+    step_count = destination
+    while (table.hasChildNodes()) {
+        table.removeChild(node.lastChild);
+    }
+    while (button_table.hasChildNodes()) {
+        button_table.removeChild(node.lastChild);
+    }
+    generatePage(obj);
 
+}
 
-/* to be replaced with .json or .xml or whatever. I just need it to work*/
-table.appendChild(createCard("Popular Workplace Comedy askhdklahs fjdaklfjlska","Devil is a part timer", "https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABSDLgE7v9x-3dywjUbjUTu6W4dZi3DC0ypUzUGdXujh29uG8tSSKhUpHaRHdHMVNJKhcgsjsFZfSMjEMdx7XxdaWhxgi.jpg?r=072"))
-table.appendChild(createCard("Popular Workplace Comedy","Devil is a part timer", "https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABSDLgE7v9x-3dywjUbjUTu6W4dZi3DC0ypUzUGdXujh29uG8tSSKhUpHaRHdHMVNJKhcgsjsFZfSMjEMdx7XxdaWhxgi.jpg?r=072"))
+function createButton(destination, text){
+    const button = document.createElement('button');
+    button.textContent = text
+    button.onclick = update_page(destination);
+    button.className = "button"
+    return button
+
+}
+
+function generatePage(json_obj)
+    var step_dict = json_obj["Nodes"][step_count]
+    var step_edges = json_obj["Edges"][step_count]
+    document.getElementById("mainTitle").textContent = step_dict["Title"];
+    var count = Object.keys(step_dict).length;
+    if(count > 1){
+        var i;
+        for (i in step_dict.slice(1)){
+        table.appendChild(createCard(i[0], i[1], i[2]))
+    } 
+}
+    
+
+    var count = Object.keys(step_edges).length;
+    if(count > 1){
+        var i;
+        for (i in step_edges){
+        table.appendChild(createButton(i["Destination"], i["Text"]))
+    }
+    
+}
