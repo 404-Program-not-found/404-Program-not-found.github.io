@@ -42,7 +42,8 @@
   align-items: center;
 }
 
-.buttonChoices{
+
+#buttonChoices{
   background-color: #4CAF50; /* Green */
   color: white;
   padding: 15px 32px;
@@ -50,6 +51,7 @@
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
+  outline:none;
   font-size: 16px;
   display: flex;
   justify-content: center;
