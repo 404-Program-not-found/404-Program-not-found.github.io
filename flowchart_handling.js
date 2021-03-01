@@ -53,7 +53,7 @@ function createButton(text, destination, json_obj){
     button.textContent = text
     button.onclick = function() {update_page(destination, json_obj)};
     button.className = "cell"
-    button_table.id = "buttonChoices"
+    button.id = "buttonChoices"
     return button
 
 }
