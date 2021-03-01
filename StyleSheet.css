@@ -32,7 +32,7 @@ body {
   min-height: 100%;
   flex: 1 0 auto;
   align-items: stretch;
-  padding: 20px;
+  margin-bottom: 15;
 }
 
 #mainTitle{
