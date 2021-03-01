@@ -13,6 +13,20 @@ body {
   min-height: 100%;
 }
 
+/*Top navigation bar style*/
+.navbar {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+
+  .navbar a {
+    padding: 0 16px;
+  }
+
+  .navbar a:hover {
+    color: #b3b3b3;
+  }
+
 .main {
   margin-top: 60px;
   min-height: 100%;
