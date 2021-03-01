@@ -64,9 +64,9 @@
 
 /*Footer style*/
 .footer {
+  position: absolute;
   background-color: white;
   border-top: 1px solid #e6e6e6;
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
