@@ -39,10 +39,10 @@ function createCard(title, text_name, img_src) {
 function update_page(destination, json_obj){
     step_count = destination
     while (table.hasChildNodes()) {
-        table.removeChild(node.lastChild);
+        table.removeChild(table.lastChild);
     }
     while (button_table.hasChildNodes()) {
-        button_table.removeChild(node.lastChild);
+        button_table.removeChild(button_table.lastChild);
     }
     generatePage(json_obj);
 
@@ -62,7 +62,7 @@ function generatePage(json_obj){
     var step_edges = step_count in json_obj["Edges"]? json_obj["Edges"][step_count]:NaN
     if(step_dict != NaN){
         for (var i in step_dict){
-        table.appendChild(createCard(i[0], i[1], i[2]))
+        table.appendChild(createCard(step_dict[i][0], step_dict[i][1], step_dict[i][2]))
     } 
 }
     if(step_edges != NaN){
