@@ -91,7 +91,7 @@ body {
 .table{
   display:table;
   border-collapse:separate;
-  border-spacing:10px;
+  border-spacing:10px, 1em;
 }
 
 .cell{
