@@ -24,7 +24,7 @@ function createCard(title, text_name, img_src) {
     const card = document.createElement('div');
     card.className = "card";
     const cardBody = document.createElement("div");
-    textTitle.className = "card-body"
+    cardBody.className = "card-body"
     const textTitle = document.createElement("h5");
     textTitle.textContent = title;
     textTitle.id = "textTitle"
