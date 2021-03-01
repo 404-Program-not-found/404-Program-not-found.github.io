@@ -61,8 +61,7 @@ function generatePage(json_obj){
     var step_dict = step_count in json_obj["Nodes"]? json_obj["Nodes"][step_count]:NaN
     var step_edges = step_count in json_obj["Edges"]? json_obj["Edges"][step_count]:NaN
     if(step_dict != NaN){
-        var i;
-        for (i in step_dict.slice(1)){
+        for (var i in step_dict){
         table.appendChild(createCard(i[0], i[1], i[2]))
     } 
 }

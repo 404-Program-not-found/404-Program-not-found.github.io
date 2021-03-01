@@ -1,9 +1,14 @@
 {
     "Root": "1",
     "Nodes": {
-        "1": {"Title": "Looking for you first anime? Press start!"},
-        "2": {"Title": "Let's start with the classics", "1":["Something epic like Avatar: The Last Airbender", "Fullmetal Alchemist: Brotherhood", "img/fullmetal.png"], "2":["Space western (Firefly, Guardians of the Galaxy)", "Cowboy bebop", "img/bebop.png"], "3":["Crime drama mindgames with the Grim Reaper", "Death Note", "img/deathnote.png"]},
-        "3": {"Title": "Need a good laugh?", "1":["Popular action comedy (with drama, \"feels\" )", "Angel Beats!", "img/angelbeats.png"], "2":["Popular romance comedy (evolves into drama)", "Toradora!", "img/toradora.png"], "3":["Popular workplace comedy (no drama!)", "The Devil is a Part-Timer!", "img/devilmacca.png"]}
+        "2": {"1":["Something epic like Avatar: The Last Airbender", "Fullmetal Alchemist: Brotherhood", "img/fullmetal.png"], "2":["Space western (Firefly, Guardians of the Galaxy)", "Cowboy bebop", "img/bebop.png"], "3":["Crime drama mindgames with the Grim Reaper", "Death Note", "img/deathnote.png"]},
+        "3": {"1":["Popular action comedy (with drama, \"feels\" )", "Angel Beats!", "img/angelbeats.png"], "2":["Popular romance comedy (evolves into drama)", "Toradora!", "img/toradora.png"], "3":["Popular workplace comedy (no drama!)", "The Devil is a Part-Timer!", "img/devilmacca.png"]}
+    },
+    "Title":{
+        "1":{"Title": "Looking for you first anime? Press start!"},
+        "2":{"Title": "Let's start with the classics"},
+        "3":{"Title": "Need a good laugh?"}
+
     },
     "Edges": {
         "1":[{"Destination":"2","Text":"Start!"}],
