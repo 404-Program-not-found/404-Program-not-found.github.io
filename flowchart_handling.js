@@ -72,7 +72,7 @@ function generatePage(json_obj){
     if(count > 1){
         var i;
         for (i in step_edges){
-        table.appendChild(createButton(i["Destination"], i["Text"]))
+        button_table.appendChild(createButton(i["Destination"], i["Text"]))
     }
     
 }
