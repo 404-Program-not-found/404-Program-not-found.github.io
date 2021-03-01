@@ -19,22 +19,28 @@ oReq.send();
 
 function createCard(title, text_name, img_src) {
     
+    const align = document.createElement("div")
+    align.className = "col-sm-4"
     const card = document.createElement('div');
-    card.className = "col-sm-4";
+    card.className = "panel panel-default panel-primary";
     card.id = "card"; 
     const textTitle = document.createElement("div");
     textTitle.textContent = title;
-    textTitle.className = "textTitle"
+    textTitle.id = "textTitle"
+    textTitle.className = "panel-heading"
     const topName = document.createElement("div");
     topName.textContent = text_name;
-    topName.className = "topName"
+    topName.id = "topName"
+    topName.id = "panel-footer"
     const bottomImage = document.createElement("div");
-    bottomImage.innerHTML = `<img src= ${img_src} class="cardImage">`;
-    bottomImage.className = "bottomImage"
+    bottomImage.innerHTML = `<img src= ${img_src} class="img-responsive center-block" id="cardImage">`;
+    bottomImage.className = "panel-body"
+    bottomImage.id = "bottomImage"
     card.append(textTitle);
     card.append(bottomImage);
     card.append(topName);
-    return card
+    align.appendChild(card)
+    return align
 }
 
 function update_page(destination, json_obj){
