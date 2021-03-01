@@ -35,6 +35,12 @@
   margin-top: 60px;
 }
 
+.mainTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*Footer style*/
 .footer {
   background-color: white;
