@@ -92,7 +92,7 @@ body {
   display:inline;
 }
 
-.center-children#child{
+.center-children > div{
   margin: inline-block imp !important;
 }
 
@@ -104,7 +104,7 @@ body {
   display:block;
 }
 
-.spaced-margin{
+.spaced-margin > div{
   margin: 5px;
 }
 
