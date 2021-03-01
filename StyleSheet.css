@@ -105,7 +105,6 @@ body {
 #card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  border-radius: 5px;
   min-width: 250px;
   min-height: 250px;
 }
@@ -115,29 +114,11 @@ body {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-/* #bottomImage{
-  padding: 10px 0;
-  background-color: white;
-  text-align: center;
-}
-
-#cardImage{
+.card-img-top {
+  width: 100%;
+  height: 15vw;
   object-fit: cover;
-  width: 290px; 
-  height: 290px;
-  display: block;
 }
-
-#textTitle{
-  font-weight: bold;
-  overflow-wrap: break-word;
-  height: 2.2em;
-}
-
-#topName{
-  font-size: 16px;
-  overflow-wrap: break-word;
-} */
 
 /* minimun width to be shown properly, due to width of recommends + body margin */
 /* @media screen and (min-width:986px){ 
