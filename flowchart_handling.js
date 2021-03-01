@@ -22,23 +22,25 @@ function createCard(title, text_name, img_src) {
     const align = document.createElement("div")
     align.className = "col-sm-4"
     const card = document.createElement('div');
-    card.className = "panel panel-primary";
-    card.id = "card"; 
-    const textTitle = document.createElement("div");
+    card.className = "card";
+    const cardBody = document.createElement("div");
+    textTitle.className = "card-body"
+    const textTitle = document.createElement("h5");
     textTitle.textContent = title;
     textTitle.id = "textTitle"
-    textTitle.className = "panel-heading"
-    const topName = document.createElement("div");
+    textTitle.className = "card-title"
+    const topName = document.createElement("p");
     topName.textContent = text_name;
-    topName.id = "topName"
-    topName.id = "panel-footer"
-    const bottomImage = document.createElement("div");
-    bottomImage.innerHTML = `<img src= ${img_src} class="img-responsive center-block" id="cardImage">`;
-    bottomImage.className = "panel-body"
-    bottomImage.id = "bottomImage"
-    card.append(textTitle);
+    topName.id = "topName";
+    topName.id = "card-text";
+    const bottomImage = document.createElement("img");
+    bottomImage.src = img_src;
+    bottomImage.className = "card-img-top"
+    bottomImage.id = "bottomImage";
+    cardBody.append(textTitle);
+    cardBody.append(topName);
     card.append(bottomImage);
-    card.append(topName);
+    card.append(cardBody)
     align.appendChild(card)
     return align
 }
