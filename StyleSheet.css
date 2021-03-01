@@ -42,6 +42,10 @@
   align-items: center;
 }
 
+#choices {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 #buttonChoices{
   background-color: #4CAF50; /* Green */
