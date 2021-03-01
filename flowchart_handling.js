@@ -22,7 +22,7 @@ function createCard(title, text_name, img_src) {
     const align = document.createElement("div")
     align.className = "col-sm-4"
     const card = document.createElement('div');
-    card.className = "panel panel-default panel-primary";
+    card.className = "panel panel-primary";
     card.id = "card"; 
     const textTitle = document.createElement("div");
     textTitle.textContent = title;

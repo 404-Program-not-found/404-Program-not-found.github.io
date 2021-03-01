@@ -111,6 +111,8 @@ body {
   background-color: #f5f5f5;
   border-radius: 5px;
   margin: 10px;
+  min-width: 250px;
+  min-height: 250px;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -118,35 +120,27 @@ body {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.bottomImage{
+#bottomImage{
   padding: 10px 0;
   background-color: white;
 }
 
-.cardImage{
+#cardImage{
   object-fit: cover;
   width: 290px; 
   height: 290px;
   display: block;
 }
 
-.textTitle{
+#textTitle{
   font-weight: bold;
   overflow-wrap: break-word;
-  color: white;
   height: 2.2em;
-  background-color: #337ab7;
-  border-radius: 5px 5px 0 0;
 }
 
-.topName{
+#topName{
   font-size: 16px;
-  border-top: 1px solid #ddd;
   overflow-wrap: break-word;
-  text-align: center;
-  background-color: #f5f5f5;
-  border-radius: 0 0 5px 5px;
-  
 }
 
 /* minimun width to be shown properly, due to width of recommends + body margin */
