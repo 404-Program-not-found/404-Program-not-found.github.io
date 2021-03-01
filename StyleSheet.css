@@ -114,6 +114,7 @@ body {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+@media (min-width:600px) {
 .vcenter {
   min-height: 100%;  /* Fallback for vh unit */
   min-height: 100vh; /* You might also want to use
@@ -154,4 +155,5 @@ body {
             -ms-flex-pack : center;
   -webkit-justify-content : center;
           justify-content : center;
+}
 }
