@@ -51,7 +51,7 @@ function update_page(destination, json_obj){
 function createButton(text, destination, json_obj){
     const button = document.createElement('button');
     button.textContent = text
-    button.onclick = update_page(destination, json_obj);
+    button.onclick = function() {update_page(destination, json_obj)};
     button.className = "button"
     return button
 
