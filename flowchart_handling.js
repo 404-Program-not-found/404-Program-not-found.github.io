@@ -67,9 +67,7 @@ function generatePage(json_obj){
         for (i in step_dict.slice(1)){
         table.appendChild(createCard(i[0], i[1], i[2]))
     } 
-}}
-    
-
+}
     var count = Object.keys(step_edges).length;
     if(count > 1){
         var i;
@@ -77,4 +75,5 @@ function generatePage(json_obj){
         table.appendChild(createButton(i["Destination"], i["Text"]))
     }
     
+}
 }
