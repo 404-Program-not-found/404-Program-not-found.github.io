@@ -88,19 +88,9 @@ body {
   text-align: center;
 }
 
-.center-children{
-  text-align: center;
+.center{
+  margin: auto;
 }
-
-.spaced-margin > div{
-  margin: 10px;
-}
-
-#recommends{
-  margin-left: auto;
-  margin-right: auto;
-}
-
 
 #card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
