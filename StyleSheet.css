@@ -111,6 +111,7 @@ body {
   text-align: center;
   background-color: #f5f5f5;
   border-radius: 5px;
+  margin: 10px;
 }
 
 /* On mouse-over, add a deeper shadow */
