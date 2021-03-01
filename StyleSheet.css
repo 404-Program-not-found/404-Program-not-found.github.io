@@ -88,17 +88,8 @@ body {
   text-align: center;
 }
 
-.align-horizontal > div{
-  box-sizing: border-box;
-  margin: inline-block imp !important;
-}
-
 .center-children{
   text-align: center;
-}
-
-.cell{
-  display:block;
 }
 
 .spaced-margin > div{
@@ -160,8 +151,9 @@ body {
   
 }
 
-@media screen and (min-width:986px){ /* minimun width to be shown properly, due to width of recommends + body margin */
+/* minimun width to be shown properly, due to width of recommends + body margin */
+/* @media screen and (min-width:986px){ 
   .mobile-friendly{
     display:initial imp !important;
   }
-}
+} */
