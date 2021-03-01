@@ -18,4 +18,4 @@ Q: will you be updating this flowchart every season?
 A: yes! To the best of my ability, though help is always welcome!
 
 Q: where is the webpage?
-A: (https://404-Program-not-found.github.io)[https://404-Program-not-found.github.io]
+A: https://404-Program-not-found.github.io
