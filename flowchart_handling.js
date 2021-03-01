@@ -70,7 +70,7 @@ function generatePage(json_obj){
     var count = Object.keys(step_edges).length;
     if(count >= 1){
         var i;
-        for (i in Object.values(step_edges)){
+        for (i in Object.values(Object.values(step_edges))){
         button_table.appendChild(createButton(i["Text"], i["Destination"], json_obj))
     }
     document.getElementById("mainTitle").textContent = step_dict["Title"];
