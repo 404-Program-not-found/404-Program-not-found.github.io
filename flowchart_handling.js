@@ -26,7 +26,7 @@ oReq.send();
 function createCard(title, text_name, img_src) {
     
     const align = document.createElement("div")
-    align.className = "col-sm-4 col-xs-6 mb-5"
+    align.className = "mb-5"
     const card = document.createElement('div');
     card.className = "card";
     const cardBody = document.createElement("div");
@@ -81,7 +81,7 @@ function createButton(text, destination, json_obj){
     const button = document.createElement('button');
     button.textContent = text
     button.onclick = function() {update_page(destination, json_obj)};
-    button.className = "col-sm-4 col-xs-md mb-5"
+    button.className = "mb-5"
     button.id = "buttonChoices" 
     return button
 
@@ -91,9 +91,12 @@ function generatePage(json_obj){
     var step_dict = step_count in json_obj["Nodes"]? json_obj["Nodes"][step_count]:NaN
     var step_edges = step_count in json_obj["Edges"]? json_obj["Edges"][step_count]:NaN
     if(step_dict != NaN){
+        const rowDiv = document.createElement('div')
+        rowDiv.className = "row"
         for (var i in step_dict){
-        table.appendChild(createCard(step_dict[i][0], step_dict[i][1], step_dict[i][2]))
+        rowDiv.appendChild(createCard(step_dict[i][0], step_dict[i][1], step_dict[i][2]))
     }
+    table.appendChild(rowDiv)
 }   
     const backBtn = document.getElementById("backBtn")
     if(history_array.length > 1){
@@ -105,9 +108,11 @@ function generatePage(json_obj){
     }
     if(step_edges != NaN){
         const rowDiv = document.createElement('div')
+        rowDiv.className = "row"
         for (var key in step_edges){
-        button_table.appendChild(createButton(step_edges[key]["Text"], step_edges[key]["Destination"], json_obj))
+        rowdiv.appendChild(createButton(step_edges[key]["Text"], step_edges[key]["Destination"], json_obj));
     }
+    button_table.appendChild(rowDiv)
 }
     document.getElementById("mainTitle").textContent = json_obj["Title"][step_count];
     
