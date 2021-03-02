@@ -94,7 +94,7 @@ function generatePage(json_obj){
 }   
     const backBtn = document.getElementById("backBtn")
     if(history_array.length > 1){
-        backBtn.onclick = function(){back()};
+        backBtn.onclick = function() {back()};
         if(backBtn.classList.contains("disabled")){backBtn.classList.remove("disabled");}
     }
     else{
