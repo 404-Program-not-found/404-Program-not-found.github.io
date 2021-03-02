@@ -7,8 +7,8 @@ var json_file
 
 console.log(table);
 
-var step_count = "1"
-var history = ["1"]
+var step_count = "1";
+var history = new Array("1");
 
 function reqListener () {
     json_file = JSON.parse(this.responseText);
