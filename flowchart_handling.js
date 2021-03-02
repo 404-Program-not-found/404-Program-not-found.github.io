@@ -3,14 +3,16 @@ const table = document.getElementById('recommends');
 const button_table = document.getElementById('choices')
 var element = document.querySelector('meta[name~="jsonDoc"]');
 var content = element && element.getAttribute("content");
+var json_file
 
 console.log(table);
 
 var step_count = "1"
+var history = ["1"]
 
 function reqListener () {
-    var obj = JSON.parse(this.responseText);
-    generatePage(obj)
+    json_file = JSON.parse(this.responseText);
+    generatePage(json_file)
 }
 
 var oReq = new XMLHttpRequest();
@@ -49,6 +51,7 @@ function createCard(title, text_name, img_src) {
 
 function update_page(destination, json_obj){
     step_count = destination
+    history.push(destination)
     while (table.hasChildNodes()) {
         table.removeChild(table.lastChild);
     }
@@ -57,6 +60,18 @@ function update_page(destination, json_obj){
     }
     generatePage(json_obj);
 
+}
+
+function back(){
+    step_count = history[history.length - 2]
+    history.pop()
+    while (table.hasChildNodes()) {
+        table.removeChild(table.lastChild);
+    }
+    while (button_table.hasChildNodes()) {
+        button_table.removeChild(button_table.lastChild);
+    }
+    generatePage(json_file);
 }
 
 function createButton(text, destination, json_obj){
@@ -76,7 +91,15 @@ function generatePage(json_obj){
         for (var i in step_dict){
         table.appendChild(createCard(step_dict[i][0], step_dict[i][1], step_dict[i][2]))
     }
-}
+}   
+    const backBtn = document.getElementById("backBtn")
+    if(history.length > 1){
+        backBtn.onclick = function(){back()};
+        if(backBtn.className.contains("disabled")){backBtn.classList.remove("disabled");}
+    }
+    else{
+        if(!backBtn.className.contains("disabled")){backBtn.classList.add("disabled");}
+    }
     if(step_edges != NaN){
         const rowDiv = document.createElement('div')
         for (var key in step_edges){
