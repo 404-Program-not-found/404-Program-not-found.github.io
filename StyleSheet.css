@@ -98,4 +98,7 @@ body {
   .card {
     width: 100%;
   }
+  .navbar-brand{
+    font-size: 0.75rem;
+  }
 }
