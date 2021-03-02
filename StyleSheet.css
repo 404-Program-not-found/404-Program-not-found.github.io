@@ -24,7 +24,10 @@ body {
   }
 
   .navbar a:hover {
-    color: #b3b3b3;
+    color: #b3b3b3 !important;
+  }
+  .navbar-brand {
+    font-size: 1.6rem;
   }
 
 .main {
