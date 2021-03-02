@@ -81,7 +81,7 @@ function createButton(text, destination, json_obj){
     const button = document.createElement('button');
     button.textContent = text
     button.onclick = function() {update_page(destination, json_obj)};
-    button.className = "col-md-4"
+    button.className = "col-md-4 mb-5"
     button.id = "buttonChoices" 
     return button
 
