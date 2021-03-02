@@ -7,11 +7,13 @@ var json_file
 
 console.log(table);
 
-var step_count = "1";
-var history_array = new Array("1");
+var step_count;
+var history_array;
 
 function reqListener () {
     json_file = JSON.parse(this.responseText);
+    step_count = json_file["Root"]
+    history_array = new Array(step_count);
     generatePage(json_file)
 }
 
