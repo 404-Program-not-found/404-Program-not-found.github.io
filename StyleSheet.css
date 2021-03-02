@@ -91,7 +91,8 @@ body {
 
 @media screen and (max-width: 768px) {
   #choices, #recommends {
-    flex-direction: column !important;
+    flex-direction: column !important; 
+    align-items: center !important;
   }
   .card {
     width: 100%;
