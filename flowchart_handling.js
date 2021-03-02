@@ -31,7 +31,7 @@ function createCard(title, text_name, img_src) {
     textTitle.textContent = title;
     textTitle.id = "textTitle"
     textTitle.className = "card-title"
-    const topName = document.createElement("p");
+    const topName = document.createElement("span");
     topName.textContent = text_name;
     topName.id = "topName";
     topName.id = "card-text";
