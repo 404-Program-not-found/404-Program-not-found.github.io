@@ -90,7 +90,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  #choices, #recommends {
+  #recommends {
     flex-direction: column !important; 
     align-items: center !important;
   }
