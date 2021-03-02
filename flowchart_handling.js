@@ -108,7 +108,7 @@ function generatePage(json_obj){
     }
     if(step_edges != NaN){
         const rowDiv = document.createElement('div')
-        rowDiv.className = "row justify-content-center"
+        rowDiv.className = "row justify-content-center mx-2"
         for (var key in step_edges){
         rowDiv.appendChild(createButton(step_edges[key]["Text"], step_edges[key]["Destination"], json_obj));
     }
