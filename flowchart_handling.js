@@ -71,20 +71,15 @@ function generatePage(json_obj){
     var step_dict = step_count in json_obj["Nodes"]? json_obj["Nodes"][step_count]:NaN
     var step_edges = step_count in json_obj["Edges"]? json_obj["Edges"][step_count]:NaN
     if(step_dict != NaN){
-        const rowDiv = document.createElement('div')
-        rowDiv.className = "row justify-content-center"
         for (var i in step_dict){
-        rowDiv.appendChild(createCard(step_dict[i][0], step_dict[i][1], step_dict[i][2]))
-    } 
-    table.appendChild(rowDiv)
+        table.appendChild(createCard(step_dict[i][0], step_dict[i][1], step_dict[i][2]))
+    }
 }
     if(step_edges != NaN){
         const rowDiv = document.createElement('div')
-        rowDiv.className = "row justify-content-center"
         for (var key in step_edges){
-        rowDiv.appendChild(createButton(step_edges[key]["Text"], step_edges[key]["Destination"], json_obj))
+        button_table.appendChild(createButton(step_edges[key]["Text"], step_edges[key]["Destination"], json_obj))
     }
-    button_table.appendChild(rowDiv)
 }
     document.getElementById("mainTitle").textContent = json_obj["Title"][step_count];
     
