@@ -1,6 +1,8 @@
 console.log("Cards is being generated...");
 const table = document.getElementById('recommends');
 const button_table = document.getElementById('choices')
+var element = document.querySelector('meta[name~="jsonDoc"]');
+var content = element && element.getAttribute("content");
 
 console.log(table);
 
@@ -13,7 +15,7 @@ function reqListener () {
 
 var oReq = new XMLHttpRequest();
 oReq.addEventListener("load", reqListener);
-oReq.open("GET", "flowchart_short.json");
+oReq.open("GET", content);
 oReq.send();
 
 
