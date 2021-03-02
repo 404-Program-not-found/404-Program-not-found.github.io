@@ -52,6 +52,7 @@ function createCard(title, text_name, img_src) {
 }
 
 function update_page(destination, json_obj){
+    window.scrollTo(xCoord, yCoord);
     step_count = destination
     history_array.push(destination)
     while (table.hasChildNodes()) {
