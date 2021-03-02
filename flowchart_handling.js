@@ -8,7 +8,7 @@ var json_file
 console.log(table);
 
 var step_count = "1";
-var history = new Array("1");
+var history_array = new Array("1");
 
 function reqListener () {
     json_file = JSON.parse(this.responseText);
@@ -51,7 +51,7 @@ function createCard(title, text_name, img_src) {
 
 function update_page(destination, json_obj){
     step_count = destination
-    history.push(destination)
+    history_array.push(destination)
     while (table.hasChildNodes()) {
         table.removeChild(table.lastChild);
     }
@@ -63,8 +63,8 @@ function update_page(destination, json_obj){
 }
 
 function back(){
-    step_count = history[history.length - 2]
-    history.pop()
+    step_count = history_array[history_array.length - 2]
+    history_array.pop()
     while (table.hasChildNodes()) {
         table.removeChild(table.lastChild);
     }
@@ -93,7 +93,7 @@ function generatePage(json_obj){
     }
 }   
     const backBtn = document.getElementById("backBtn")
-    if(history.length > 1){
+    if(history_array.length > 1){
         backBtn.onclick = function(){back()};
         if(backBtn.classList.contains("disabled")){backBtn.classList.remove("disabled");}
     }
