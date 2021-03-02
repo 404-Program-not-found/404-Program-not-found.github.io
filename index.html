@@ -2,20 +2,22 @@
 <html>
     <head>
         <title>The ultimate anime recommendation flowchart</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="StyleSheet.css" rel="stylesheet">
-        <meta name="description" content="This field contains information about your page. It is usually around two sentences long.">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <meta name="description" content="The ultimate anime recommendation flowchart, created by Alex_146 and in part with members of the r/HFY discord server">
         <meta name="author" content="404_Program_not_found">
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="jsonDoc" content="flowchart_short.json">
     </head>
     <body>
-        <div class="topnav">
-            <a href="index.html">The ultimate anime recommendation flowchart</a>
+        <div class="navbar sticky-top navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">The ultimate anime recommendation flowchart</a>
+            <div class="btn-nav nav navbar-nav navbar-right"><a class="btn btn-light btn-small navbar-btn mx-2" href="/register">Back</a></div>
         </div>
-        <div class="main">
+        <div class="main container-fluid text-center">
             <h1 id="mainTitle"></h1>
-            <div class="table" id="recommends"></div>
-            <div class="table" id="choices"></div>
+            <div id="recommends" class="d-flex justify-content-center"></div>
+            <div id="choices" class="d-flex justify-content-center"></div>
             <script type="text/javascript" src="flowchart_handling.js"></script>
         </div>
         <div class="footer">
