@@ -1,12 +1,42 @@
-
 {
+  "Root":"start",
+
   "Nodes": {
 
   },
   "Title": {
-
+    "start":"I'm looking for something..."
   },
   "Edges": {
-
+    "start":[
+      {
+        "Destination": "action-adventure",
+        "Text": "Dynamic"
+      },
+      {
+        "Destination": "comedy",
+        "Text": "Funny"
+      },
+      {
+        "Destination": "SoL (comedy)",
+        "Text": "Calm"
+      },
+      {
+        "Destination": "SoL (drama)",
+        "Text": "Moving"
+      },
+      {
+        "Destination": "drama",
+        "Text": "Mature"
+      },
+      {
+        "Destination": "thriller",
+        "Text": "Intense"
+      },
+      {
+        "Destination": "horror",
+        "Text": "Scary"
+      }
+    ]
   }
 }
