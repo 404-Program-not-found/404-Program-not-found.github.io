@@ -110,7 +110,7 @@ function generatePage(json_obj){
         const rowDiv = document.createElement('div')
         rowDiv.className = "row"
         for (var key in step_edges){
-        rowdiv.appendChild(createButton(step_edges[key]["Text"], step_edges[key]["Destination"], json_obj));
+        rowDiv.appendChild(createButton(step_edges[key]["Text"], step_edges[key]["Destination"], json_obj));
     }
     button_table.appendChild(rowDiv)
 }
