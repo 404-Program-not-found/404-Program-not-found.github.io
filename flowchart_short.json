@@ -1,26 +1,129 @@
 {
-    "Nodes": {
-        "2": {"1":["Something epic like Avatar: The Last Airbender", "Fullmetal Alchemist: Brotherhood", "img/fullmetal.png"], "2":["Space western (Firefly, Guardians of the Galaxy)", "Cowboy bebop", "img/bebop.png"], "3":["Crime drama mindgames with the Grim Reaper", "Death Note", "img/deathnote.png"]},
-        "3": {"1":["Popular action comedy (with drama, \"feels\" )", "Angel Beats!", "img/angelbeats.png"], "2":["Popular romance comedy (evolves into drama)", "Toradora!", "img/toradora.png"], "3":["Popular workplace comedy (no drama!)", "The Devil is a Part-Timer!", "img/devilmacca.png"]},
-        "4": {"1":["Psychological police in a cyberpunk setting", "Psycho-Pass", "img/psychopass.png"], "2":["Superpowers, X-Men style (Chinese Electric Batman)", "Darker than Black", "img/darkblack.png"], "3":["Time travel experiment thriller", "Steins;Gate", "img/steinsgate.png"]},
-        "5": {"1":["Samurai are cool (even cooler with hip-hop music)", "Samurai Champloo", "img/samurai.png"], "2":["I'VE HEARD THERE ARE SOME GIANT ROBOTS", "Tengen Toppa Gurren Lagann", "img/gurrenlagann.png"], "3":["I like the Ghibli movies, especially the spirit stuff", "Mushishi", "img/mushishi.png"]},
-        "6": {"1":["Something gritty, edgy and with epic music", "Attack on Titan", "img/attacktitan.png"], "2":["Arabian Nights road trip adventure, Avatar-style", "Magi: The Labyrinth of Magic", "img/magilabyrinth.png"], "3":["Pirates of the Caribbean meets Diablo", "Shingeki no Bahamut: Genesis", "img/shingekibahamut.png"]}
-        
+  "Nodes": {
+    "2": {
+      "1": [
+        "Something epic like Avatar: The Last Airbender",
+        "Fullmetal Alchemist: Brotherhood",
+        "img/fullmetal.png"
+      ],
+      "2": [
+        "Space western (Firefly, Guardians of the Galaxy)",
+        "Cowboy bebop",
+        "img/bebop.png"
+      ],
+      "3": [
+        "Crime drama mindgames with the Grim Reaper",
+        "Death Note",
+        "img/deathnote.png"
+      ]
     },
-    "Title":{
-        "1":"Looking for you first anime? Press start!",
-        "2":"Let's start with the classics",
-        "3":"Need a good laugh?",
-        "4":"Something dark and serious, then?",
-        "5":"Want something typically Japanese?",
-        "6":"Fantasy action adventure?"
-
+    "3": {
+      "1": [
+        "Popular action comedy (with drama, \"feels\")",
+        "Angel Beats!",
+        "img/angelbeats.png"
+      ],
+      "2": [
+        "Popular romance comedy (evolves into drama)",
+        "Toradora!",
+        "img/toradora.png"
+      ],
+      "3": [
+        "Popular workplace comedy (no drama!)",
+        "The Devil is a Part-Timer!",
+        "img/devilmacca.png"
+      ]
     },
-    "Edges": {
-        "1":[{"Destination":"2","Text":"Start!"}],
-        "2":[{"Destination":"3","Text":"Seen these 3 already (or need something different)"}],
-        "3":[{"Destination":"4","Text":"Let's stick to action-adventure"}],
-        "4":[{"Destination":"5","Text":"Don't overdo it"}],
-        "5":[{"Destination":"6","Text":"Something more Western, please"}]
+    "4": {
+      "1": [
+        "Psychological police in a cyberpunk setting",
+        "Psycho-Pass",
+        "img/psychopass.png"
+      ],
+      "2": [
+        "Superpowers, X-Men style (Chinese Electric Batman)",
+        "Darker than Black",
+        "img/darkblack.png"
+      ],
+      "3": [
+        "Time travel experiment thriller",
+        "Steins;Gate",
+        "img/steinsgate.png"
+      ]
+    },
+    "5": {
+      "1": [
+        "Samurai are cool (even cooler with hip-hop music)",
+        "Samurai Champloo",
+        "img/samurai.png"
+      ],
+      "2": [
+        "I'VE HEARD THERE ARE SOME GIANT ROBOTS",
+        "Tengen Toppa Gurren Lagann",
+        "img/gurrenlagann.png"
+      ],
+      "3": [
+        "I like the Ghibli movies, especially the spirit stuff",
+        "Mushishi",
+        "img/mushishi.png"
+      ]
+    },
+    "6": {
+      "1": [
+        "Something gritty, edgy and with epic music",
+        "Attack on Titan",
+        "img/attacktitan.png"
+      ],
+      "2": [
+        "Arabian Nights road trip adventure, Avatar-style",
+        "Magi: The Labyrinth of Magic",
+        "img/magilabyrinth.png"
+      ],
+      "3": [
+        "Pirates of the Caribbean meets Diablo",
+        "Shingeki no Bahamut: Genesis",
+        "img/shingekibahamut.png"
+      ]
     }
+  },
+  "Title": {
+    "1": "Looking for you first anime? Press start!",
+    "2": "Let's start with the classics",
+    "3": "Need a good laugh?",
+    "4": "Something dark and serious, then?",
+    "5": "Want something typically Japanese?",
+    "6": "Fantasy action adventure?"
+  },
+  "Edges": {
+    "1": [
+      {
+        "Destination": "2",
+        "Text": "Start!"
+      }
+    ],
+    "2": [
+      {
+        "Destination": "3",
+        "Text": "Seen these 3 already (or need something different)"
+      }
+    ],
+    "3": [
+      {
+        "Destination": "4",
+        "Text": "Let's stick to action-adventure"
+      }
+    ],
+    "4": [
+      {
+        "Destination": "5",
+        "Text": "Don't overdo it"
+      }
+    ],
+    "5": [
+      {
+        "Destination": "6",
+        "Text": "Something more Western, please"
+      }
+    ]
+  }
 }
