@@ -72,7 +72,7 @@ function generatePage(json_obj){
     var step_edges = step_count in json_obj["Edges"]? json_obj["Edges"][step_count]:NaN
     if(step_dict != NaN){
         const rowDiv = document.createElement('div')
-        rowDiv.className = "row vcenter"
+        rowDiv.className = "row justify-content-center"
         for (var i in step_dict){
         rowDiv.appendChild(createCard(step_dict[i][0], step_dict[i][1], step_dict[i][2]))
     } 
