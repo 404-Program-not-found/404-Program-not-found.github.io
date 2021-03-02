@@ -1,7 +1,7 @@
 # anime-flowchart-web
  The Ultimate Anime Recommendation Flowchart, in code form!
 ***
-Based on the flowchart of the same name posted by lukeatlook,this project aims to better enable collaboration and better maintenance by transcribing his work onto a website.
+Based on the flowchart of the same name posted by lukeatlook, this project aims to better enable collaboration and better maintenance by transcribing his work onto a website.
 
 ### current objectives:
 * to fully transcribe lukeatlook's 2015 chart
