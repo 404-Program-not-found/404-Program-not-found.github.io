@@ -95,10 +95,10 @@ function generatePage(json_obj){
     const backBtn = document.getElementById("backBtn")
     if(history.length > 1){
         backBtn.onclick = function(){back()};
-        if(backBtn.className.contains("disabled")){backBtn.classList.remove("disabled");}
+        if(backBtn.classList.contains("disabled")){backBtn.classList.remove("disabled");}
     }
     else{
-        if(!backBtn.className.contains("disabled")){backBtn.classList.add("disabled");}
+        if(!backBtn.classList.contains("disabled")){backBtn.classList.add("disabled");}
     }
     if(step_edges != NaN){
         const rowDiv = document.createElement('div')
