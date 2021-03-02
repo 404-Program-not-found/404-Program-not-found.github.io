@@ -26,7 +26,7 @@ oReq.send();
 function createCard(title, text_name, img_src) {
     
     const align = document.createElement("div")
-    align.className = "mb-5"
+    align.className = "mb-5 col-md-4"
     const card = document.createElement('div');
     card.className = "card";
     const cardBody = document.createElement("div");
@@ -81,7 +81,7 @@ function createButton(text, destination, json_obj){
     const button = document.createElement('button');
     button.textContent = text
     button.onclick = function() {update_page(destination, json_obj)};
-    button.className = "mb-5"
+    button.className = "mb-5 col-md-4"
     button.id = "buttonChoices" 
     return button
 
