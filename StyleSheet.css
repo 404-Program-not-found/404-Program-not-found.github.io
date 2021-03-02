@@ -20,6 +20,7 @@ body {
   }
 
   .navbar a {
+    word-wrap: break-word;
     padding: 0 16px;
   }
 
