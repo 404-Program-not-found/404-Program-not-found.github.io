@@ -18,6 +18,7 @@ function reqListener () {
 window.onpopstate = function(event) {
     if (event.state.step){
         step_count = event.state.step;
+        console.log(event.state.step)
         generatePage(json_file)
     }
   };
@@ -59,6 +60,7 @@ function createCard(title, text_name, img_src) {
 function update_page(destination, json_obj){
     window.scrollTo(0, 0);
     history.pushState({"step":step_count}, "", window.location)
+    console.log({"step":step_count})
     step_count = destination
     generatePage(json_obj);
 
