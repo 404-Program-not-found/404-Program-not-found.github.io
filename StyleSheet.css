@@ -92,8 +92,6 @@ body {
 }
 
 #bottomImage{
-  width: 300px; /* width of container */
-    height: 353px; /* height of container */
     object-fit: cover;
 }
 
