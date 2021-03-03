@@ -93,7 +93,7 @@ body {
 
 #bottomImage{
   width: 100% !important;
-  height: 225 !important;
+  height: 225px !important;
   object-fit: cover;
 }
 
