@@ -73,6 +73,14 @@ function update_page(destination, json_obj){
 
 function back(){
     history.back();
+    while (table.hasChildNodes()) {
+        table.removeChild(table.lastChild);
+    }
+    while (button_table.hasChildNodes()) {
+        button_table.removeChild(button_table.lastChild);
+    }
+    generatePage(json_file);
+    
 }
 
 function createButton(text, destination, json_obj){
