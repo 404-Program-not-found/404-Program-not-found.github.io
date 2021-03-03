@@ -16,11 +16,16 @@ function reqListener () {
 }
 
 window.onpopstate = function(event) {
-    if (event.state.step){
-        step_count = event.state.step;
-        console.log(event.state.step)
+    if (state !== null){
+    if (event.state.destination){
+        step_count = event.state.destination;
         generatePage(json_file)
     }
+    else{
+        step_count = json_file.Root;
+        generatePage(json_file)
+    }
+}
   };
 
 var oReq = new XMLHttpRequest();
@@ -59,8 +64,7 @@ function createCard(title, text_name, img_src) {
 
 function update_page(destination, json_obj){
     window.scrollTo(0, 0);
-    history.state.next_step = destination;
-    history.pushState({"step":step_count}, "", window.location);
+    history.pushState({"step":step_count, "step_destination":destination}, "", window.location);
     console.log({"step":step_count});
     step_count = destination;
     generatePage(json_obj);
