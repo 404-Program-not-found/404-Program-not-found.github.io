@@ -16,16 +16,13 @@ function reqListener () {
 }
 
 window.onpopstate = function(event) {
-    if (event.state != null){
-    if (event.state.destination){
-        step_count = event.state.destination;
-        generatePage(json_file)
-    }
-    else{
+    if (event.state == null){
         step_count = json_file.Root;
-        generatePage(json_file)
+        generatePage(json_file)}
+    else if(event.state.destination){
+            step_count = event.state.destination;
+            generatePage(json_file)
     }
-}
   };
 
 var oReq = new XMLHttpRequest();
