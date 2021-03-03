@@ -2,6 +2,40 @@
   "Root":"start",
 
   "Nodes": {
+    "sports-fresh-classic":{
+      "1": [
+        "Ping Pong",
+        "Ping pong anime with a unique art style",
+        "img/pingpong.jpg"
+      ],
+      "sports-classic":{
+        "1": [
+          "Hajime No Ippo",
+          "Self improvemnt by boxing",
+          "img/hajimeippo.png"
+        ],
+        "2": [
+          "Initial D",
+          "Street racing with a cheap toyta from the 90s",
+          "img/initiald.png"
+        ],
+        "3": [
+          "One outs",
+          "baseball with gambling",
+          "img/oneouts.jpg"
+        ],
+        "4": [
+          "Major",
+          "baseball",
+          "img/major.jpg"
+        ],
+        "5": [
+          "Hikaru no Go",
+          "Competitive Go (asian tabletop strategy game)",
+          "img/hikarunogo.jpg"
+        ]
+
+    }
 
   },
   "Title": {
@@ -51,6 +85,20 @@
       {
         "Destination": "action-fun",
         "Text": "PURE FUN"
+      }
+    ],
+    "sports":[
+      {
+        "Destination": "sports-fresh-classic",
+        "Text": "Fresh classic"
+      },
+      {
+        "Destination": "sports-classic",
+        "Text": "Classics"
+      },
+      {
+        "Destination": "sports-fresh",
+        "Text": "Fresh stuff"
       }
     ]
   }
