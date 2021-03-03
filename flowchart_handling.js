@@ -23,6 +23,16 @@ oReq.open("GET", content);
 oReq.send();
 
 
+window.onload = function () {
+    if (typeof history.pushState === "function") {
+        history.pushState("jibberish", null, null);
+        window.onpopstate = function () {
+            history.pushState('newjibberish', null, null);
+        };
+    }
+}
+
+
 function createCard(title, text_name, img_src) {
     
     const align = document.createElement("div")
