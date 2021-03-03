@@ -114,6 +114,7 @@ function generatePage(json_obj){
     }
     button_table.appendChild(rowDiv)
 }
+    document.getElementById("mainTitle").innerHTML = null
     document.getElementById("mainTitle").innerHTML = json_obj["Title"][step_count].replace(/(\r\n|\r|\n)/g, '<br>');
     
 }
