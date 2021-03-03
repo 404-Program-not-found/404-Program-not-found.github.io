@@ -24,7 +24,7 @@ oReq.send();
 
 
 window.onload = function () {
-    if (typeof history.pushState === "function") {
+    if (typeof history.pushState === "function" && !history_array == undefined) {
         if(history_array.length > 1){
             back();
         }
