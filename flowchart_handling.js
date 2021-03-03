@@ -24,8 +24,10 @@ oReq.send();
 
 
 window.onload = function () {
-    if (typeof history.pushState === "function" && history_array.length > 1) {
-        back();
+    if (typeof history.pushState === "function") {
+        if(history_array.length > 1){
+            back();
+        }
         };
     }
 
