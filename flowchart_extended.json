@@ -35,13 +35,53 @@
         "Competitive Go (asian tabletop strategy game)",
         "img/hikarunogo.jpg"
       ]
+    },
+    "sports-fresh":{
+      "1": [
+        "Kuroko no Basket",
+        "Basketball tournament arc",
+        "img/kurokobasket.jpg"
+      ],
+      "2": [
+        "Ace of Diamond",
+        "Baseball",
+        "img/aceofdiamond.jpg"
+      ],
+      "3": [
+        "Ace of Diamond",
+        "Math nerd plays tennis",
+        "img/babysteps.png"
+      ],
+      "4": [
+        "Haikyuu!",
+        "Volleyball can be cool too... right?",
+        "img/haikyuu.jpg"
+      ],
+      "5": [
+        "Free!",
+        "Swimming - and abs! Lots, and lots of abs",
+        "img/free.jpg"
+      ],
+      "6": [
+        "Eyeshield 21",
+        "It's not everyday american football is featured in an anime",
+        "img/eyeshield.jpg"
+      ],
+      "7": [
+        "Chihayafuru",
+        "Japanese poerty card game that focuses on character development, give it a watch",
+        "img/chihayafuru.jpeg"
+      ]
     }
 
   },
   "Title": {
     "start":"I'm looking for something...",
-    "action-adventure":"Action/Adventure\nWhat Kind of Action?",
-    "sports":"Oldschool or new?"
+    "action-adventure":"Action / Adventure\nWhat Kind of Action?",
+    "sports":"Oldschool or new?",
+    "sports-fresh-classic":"Fresh sports classics",
+    "sports-classic":"The classics of sports anime",
+    "sports-fresh":"Fresh sports anime right off the grill"
   },
   "Edges": {
     "start":[
