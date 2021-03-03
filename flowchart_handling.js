@@ -24,10 +24,12 @@ oReq.send();
 
 
 window.addEventListener('popstate', function (event) {
-    if (!history_array == undefined){
+    if (history_array !== undefined){
         if(history_array.length > 1){
-            back()
+            back();
         }
+    } else{
+        window.history.back();
     }
     });
 
