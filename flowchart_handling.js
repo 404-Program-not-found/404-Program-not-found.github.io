@@ -59,7 +59,8 @@ function createCard(title, text_name, img_src) {
 function update_page(destination, json_obj){
     window.scrollTo(0, 0);
     step_count = destination
-    history.pushState({"step":step_count}, "", "")
+    history.pushState({"step":step_count}, "", window.location)
+    history.pushState({"step":step_count}, "", window.location)
     while (table.hasChildNodes()) {
         table.removeChild(table.lastChild);
     }
