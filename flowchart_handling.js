@@ -72,12 +72,6 @@ function update_page(destination, json_obj){
 }
 
 function back(){
-    while (table.hasChildNodes()) {
-        table.removeChild(table.lastChild);
-    }
-    while (button_table.hasChildNodes()) {
-        button_table.removeChild(button_table.lastChild);
-    }
     history.back();
 }
 
@@ -92,6 +86,12 @@ function createButton(text, destination, json_obj){
 }
 
 function generatePage(json_obj){
+    while (table.hasChildNodes()) {
+        table.removeChild(table.lastChild);
+    }
+    while (button_table.hasChildNodes()) {
+        button_table.removeChild(button_table.lastChild);
+    }
     var step_dict = step_count in json_obj["Nodes"]? json_obj["Nodes"][step_count]:NaN
     var step_edges = step_count in json_obj["Edges"]? json_obj["Edges"][step_count]:NaN
     if(step_dict != NaN){
