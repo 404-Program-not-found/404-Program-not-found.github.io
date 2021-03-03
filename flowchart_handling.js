@@ -16,8 +16,8 @@ function reqListener () {
 }
 
 window.onpopstate = function(event) {
-    if (JSON.stringify(event.state)["step"]){
-        step_count = JSON.stringify(event.state)["step"];
+    if (event.state.step){
+        step_count = event.state.step;
         generatePage(json_file)
     }
   };
