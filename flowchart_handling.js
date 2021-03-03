@@ -58,9 +58,9 @@ function createCard(title, text_name, img_src) {
 
 function update_page(destination, json_obj){
     window.scrollTo(0, 0);
+    history.pushState({"step":step_count}, "", window.location)
+    history.pushState({"step":step_count}, "", window.location)
     step_count = destination
-    history.pushState({"step":step_count}, "", window.location)
-    history.pushState({"step":step_count}, "", window.location)
     while (table.hasChildNodes()) {
         table.removeChild(table.lastChild);
     }
@@ -72,15 +72,13 @@ function update_page(destination, json_obj){
 }
 
 function back(){
-    history.back();
     while (table.hasChildNodes()) {
         table.removeChild(table.lastChild);
     }
     while (button_table.hasChildNodes()) {
         button_table.removeChild(button_table.lastChild);
     }
-    generatePage(json_file);
-    
+    history.back();
 }
 
 function createButton(text, destination, json_obj){
