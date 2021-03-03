@@ -5,7 +5,8 @@
 
   },
   "Title": {
-    "start":"I'm looking for something..."
+    "start":"I'm looking for something...",
+    "action-adventure":"Action/Adventure<br>What Kind of Action?"
   },
   "Edges": {
     "start":[
@@ -36,6 +37,20 @@
       {
         "Destination": "horror",
         "Text": "Scary"
+      }
+    ],
+    "action-adventure":[
+      {
+        "Destination": "fights",
+        "Text": "Fights"
+      },
+      {
+        "Destination": "sports",
+        "Text": "Sports"
+      },
+      {
+        "Destination": "action-fun",
+        "Text": "PURE FUN"
       }
     ]
   }
