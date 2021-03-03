@@ -61,12 +61,6 @@ function update_page(destination, json_obj){
     history.pushState({"step":step_count}, "", window.location)
     history.pushState({"step":step_count}, "", window.location)
     step_count = destination
-    while (table.hasChildNodes()) {
-        table.removeChild(table.lastChild);
-    }
-    while (button_table.hasChildNodes()) {
-        button_table.removeChild(button_table.lastChild);
-    }
     generatePage(json_obj);
 
 }
