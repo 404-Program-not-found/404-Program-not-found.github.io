@@ -19,8 +19,8 @@ window.onpopstate = function(event) {
     if (event.state == null){
         step_count = json_file.Root;
         generatePage(json_file)}
-    else if(event.state.destination){
-            step_count = event.state.destination;
+    else if(event.state.step_destination){
+            step_count = event.state.step_destination;
             generatePage(json_file)
     }
   };
