@@ -92,7 +92,8 @@ body {
 }
 
 #bottomImage{
-  height: 225;
+  width: 100% !important;
+  height: 225 !important;
   object-fit: cover;
 }
 
