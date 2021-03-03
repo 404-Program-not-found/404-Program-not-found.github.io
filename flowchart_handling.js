@@ -67,6 +67,7 @@ function update_page(destination, json_obj){
 }
 
 function back(){
+    console.log(history.state)
     history.back();
 }
 
