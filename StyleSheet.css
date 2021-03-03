@@ -90,6 +90,13 @@ body {
 .card-body{
   margin-bottom: 0px;
 }
+
+#bottomImage{
+  width: 469px; /* width of container */
+    height: 353px; /* height of container */
+    object-fit: cover;
+}
+
 @media screen and (max-width: 986px) {
   #recommends {
     flex-direction: column !important; 
