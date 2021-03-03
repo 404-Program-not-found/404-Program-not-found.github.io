@@ -24,13 +24,11 @@ oReq.send();
 
 
 window.onload = function () {
-    if (typeof history.pushState === "function") {
-        history.pushState("jibberish", null, null);
-        window.onpopstate = function () {
-            history.pushState('newjibberish', null, null);
+    if (typeof history.pushState === "function" && history_array.length > 1) {
+        back();
         };
     }
-}
+
 
 
 function createCard(title, text_name, img_src) {
