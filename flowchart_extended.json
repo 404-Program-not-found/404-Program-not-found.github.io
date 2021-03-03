@@ -6,7 +6,7 @@
   },
   "Title": {
     "start":"I'm looking for something...",
-    "action-adventure":"Action/Adventure<br>What Kind of Action?"
+    "action-adventure":"Action/Adventure\nWhat Kind of Action?"
   },
   "Edges": {
     "start":[
