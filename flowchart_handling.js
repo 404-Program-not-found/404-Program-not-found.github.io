@@ -16,7 +16,7 @@ function reqListener () {
 }
 
 window.onpopstate = function(event) {
-    if (state !== null){
+    if (event.state != null){
     if (event.state.destination){
         step_count = event.state.destination;
         generatePage(json_file)
@@ -104,7 +104,7 @@ function generatePage(json_obj){
     table.appendChild(rowDiv)
 }   
     const backBtn = document.getElementById("backBtn")
-    if(step_count !== json_obj.Root){
+    if(step_count != json_obj.Root){
         backBtn.onclick = function() {back()};
         if(backBtn.classList.contains("disabled")){backBtn.classList.remove("disabled");}
     }
