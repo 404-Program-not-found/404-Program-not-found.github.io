@@ -48,6 +48,9 @@ function createCard(title, text_name, img_src) {
     topName.id = "topName";
     topName.id = "card-text";
     const bottomImage = document.createElement("img");
+    if(!img_src.includes("img/")){
+        img_src = "img/"+img_src
+    }
     bottomImage.src = img_src;
     bottomImage.className = "card-img-top"
     bottomImage.id = "bottomImage";

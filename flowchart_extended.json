@@ -6,71 +6,128 @@
       "1": [
         "Ping Pong",
         "Ping pong anime with a unique art style",
-        "img/pingpong.jpg"
+        "pingpong.jpg"
       ]
     },
     "sports-classic":{
       "1": [
         "Hajime No Ippo",
         "Self improvemnt by boxing",
-        "img/hajimeippo.png"
+        "hajimeippo.png"
       ],
       "2": [
         "Initial D",
         "Street racing with a cheap toyta from the 90s",
-        "img/initiald.jpg"
+        "initiald.jpg"
       ],
       "3": [
         "One outs",
         "baseball with gambling",
-        "img/oneouts.jpg"
+        "oneouts.jpg"
       ],
       "4": [
         "Major",
         "baseball",
-        "img/major.jpg"
+        "major.jpg"
       ],
       "5": [
         "Hikaru no Go",
         "Competitive Go (asian tabletop strategy game)",
-        "img/hikarunogo.jpg"
+        "hikarunogo.jpg"
       ]
     },
     "sports-fresh":{
       "1": [
         "Kuroko no Basket",
         "Basketball tournament arc",
-        "img/kurokobasket.jpg"
+        "kurokobasket.jpg"
       ],
       "2": [
         "Ace of Diamond",
         "Baseball",
-        "img/aceofdiamond.jpg"
+        "aceofdiamond.jpg"
       ],
       "3": [
         "Ace of Diamond",
         "Math nerd plays tennis",
-        "img/babysteps.png"
+        "babysteps.png"
       ],
       "4": [
         "Haikyuu!",
-        "Volleyball can be cool too... right?",
-        "img/haikyuu.jpg"
+        "Volleyball can be cool too... Right?",
+        "haikyuu.jpg"
       ],
       "5": [
         "Free!",
         "Swimming - and abs! Lots, and lots of abs",
-        "img/free.jpg"
+        "free.jpg"
       ],
       "6": [
         "Eyeshield 21",
         "It's not everyday american football is featured in an anime",
-        "img/eyeshield.jpg"
+        "eyeshield.jpg"
       ],
       "7": [
         "Chihayafuru",
         "Japanese poerty card game that focuses on character development, give it a watch",
-        "img/chihayafuru.jpeg"
+        "chihayafuru.jpeg"
+      ]
+    },
+    "action-fun":{
+      "1": [
+        "FCFL",
+        "For when you are ready for the joyride",
+        "fcfl.jpg"
+      ],
+      "2":[
+        "Kill La kill",
+        "For when you are real ready for the joyride (Content Warning - Lewd/Echhi character designs)",
+        "killlakill.jpg"
+      ],
+      "3":[
+        "Gurren Lagann",
+        "You could say this show is... \"Mecha fun\"",
+        "gurrenlagann.jpg"
+      ],
+      "4":[
+        "No game no life",
+        "Gamers thrown into a world of games - excellent art (Content Warning - Lewd/Echhi scenes)",
+        "nogamenolife.jpg"
+      ],
+      "5":[
+        "Symphogear",
+        "Power Armour fueled by singing J-pop - beware: J-pop",
+        "symphogear.jpg"
+      ],
+      "6":[
+        "Food wars",
+        "Kitchen Nightmares if it was a 1-on-1 tournament arc. Also takes \"food porn\" a little too literally (Content Warning - Lewd/Echhi scenes and characters)",
+        "foodwars.jpg"
+      ],
+      "7":[
+        "Panty & Stocking",
+        "Ever thought powerpuff girls was a little too G rated? (Content Warning - Look at the title and figure it out)",
+        "pantystocking.jpg"
+      ],
+      "8":[
+        "Samurai Flamenco",
+        "A tribute to superheros - Starts off Kick-ass, then... It changes.",
+        "samflam.jpg"
+      ],
+      "9":[
+        "Highschool of the Dead",
+        "I.. I watch it for the plot! Yeah! The plot about the zombie apocalypse! (Content Warning - Lewd/Echhi scenes)",
+        "highschooldead.jpg"
+      ],
+      "10":[
+        "Cross Ange",
+        "If the dungeon master got drunk - show changes after a little while, give it time (Content Warning - Lewd/Echhi character design)",
+        "crossange.jpg"
+      ],
+      "11":[
+        "JoJo's Bizzare Adventure",
+        "You expected a summurization! But it was me, dio! Seriously though, give it a watch",
+        "jojo.jpeg"
       ]
     }
 
@@ -81,7 +138,8 @@
     "sports":"Oldschool or new?",
     "sports-fresh-classic":"Fresh sports classics",
     "sports-classic":"The classics of sports anime",
-    "sports-fresh":"Fresh sports anime right off the grill"
+    "sports-fresh":"Fresh sports anime right off the grill",
+    "action-fun":"Pick your poison"
   },
   "Edges": {
     "start":[
