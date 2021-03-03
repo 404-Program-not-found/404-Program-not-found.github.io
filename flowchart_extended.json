@@ -126,8 +126,27 @@
       ],
       "11":[
         "JoJo's Bizzare Adventure",
-        "You expected a summery! But it was me, Dio! Seriously though, give it a watch",
+        "You expected a summary! But it was me, Dio! Seriously though, give it a watch",
         "jojo.jpeg"
+      ]
+    },
+    "action-completed-extreme-modern":{
+      "1": [
+        "Black Lagoon",
+        "Thailand rouge mercenary group",
+        "blacklagoon.jpg"
+      ],
+      "2":[
+        "Phantom: Requiem for the Phantom",
+        "Mafia, now with genderflipped agent 47!",
+        "phantomrequiem.jpg"
+      ]
+    },
+    "action-completed-extreme-superpowers":{
+      "1":[
+        "Darker than Black",
+        "Superpowers, X-Men style (Chinese Electric Batman)",
+        "darkblack.png"
       ]
     }
 
@@ -139,7 +158,11 @@
     "sports-fresh-classic":"Fresh sports classics",
     "sports-classic":"The classics of sports anime",
     "sports-fresh":"Fresh sports anime right off the grill",
-    "action-fun":"Pick your poison"
+    "action-fun":"Pick your poison",
+    "fights":"Finished story?",
+    "action-completed":"Action or adventure?",
+    "action-completed-extreme":"Supernatural?",
+    "action-completed-extreme-modern":"For all your explosion needs!"
   },
   "Edges": {
     "start":[
@@ -198,6 +221,64 @@
       {
         "Destination": "sports-fresh",
         "Text": "Fresh stuff"
+      }
+    ],
+    "fights":[
+      {
+        "Destination": "action-completed",
+        "Text": "Yes, I want it to have a conclusive finale"
+      },
+      {
+        "Destination": "action-incomplete",
+        "Text": "It doesn't matter"
+      }
+    ],
+    "action-completed":[
+      {        
+        "Destination": "action-completed-extreme",
+        "Text": "Full-blown action"
+      },
+      {
+        "Destination": "action-adventure",
+        "Text": "Road trip adventure"
+      }
+    ],
+    "action-completed-extreme":[
+      {
+        "Destination": "action-completed-extreme-modern",
+        "Text": "Not really"
+      },
+      {
+        "Destination": "action-completed-extreme-superpowers",
+        "Text": "Superpowers"
+      },
+      {
+        "Destination": "action-completed-extreme-med-fantasy",
+        "Text": "Medieval Fantasy"
+      },
+      {
+        "Destination": "action-completed-extreme-urb-fantasy",
+        "Text": "Urban Fantasy"
+      },
+      {
+        "Destination": "action-completed-extreme-sprit",
+        "Text": "Sprit hunting"
+      },
+      {
+        "Destination": "action-completed-extreme-magical-girls",
+        "Text": "Magical girls"
+      },
+      {
+        "Destination": "action-completed-extreme-scifi",
+        "Text": "Science Fiction"
+      },
+      {
+        "Destination": "action-completed-extreme-punching",
+        "Text": "Martial Arts"
+      },
+      {
+        "Destination": "action-completed-extreme-samurai",
+        "Text": "Samurai"
       }
     ]
   }
