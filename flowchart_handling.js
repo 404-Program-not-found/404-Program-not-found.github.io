@@ -8,31 +8,24 @@ var json_file
 console.log(table);
 
 var step_count;
-var history_array;
 
 function reqListener () {
     json_file = JSON.parse(this.responseText);
-    step_count = json_file["Root"]
-    history_array = new Array(step_count);
+    step_count = json_file.Root
     generatePage(json_file)
 }
+
+window.onpopstate = function(event) {
+    if (JSON.stringify(event.state)["step"]){
+        step_count = JSON.stringify(event.state)["step"];
+        generatePage(json_file)
+    }
+  };
 
 var oReq = new XMLHttpRequest();
 oReq.addEventListener("load", reqListener);
 oReq.open("GET", content);
 oReq.send();
-
-
-window.addEventListener('popstate', function (event) {
-    if (history_array !== undefined){
-        if(history_array.length > 1){
-            back();
-        }
-    } else{
-        window.history.back();
-    }
-    });
-
 
 
 function createCard(title, text_name, img_src) {
@@ -66,7 +59,7 @@ function createCard(title, text_name, img_src) {
 function update_page(destination, json_obj){
     window.scrollTo(0, 0);
     step_count = destination
-    history_array.push(destination)
+    history.pushState({"step":step_count}, "", "")
     while (table.hasChildNodes()) {
         table.removeChild(table.lastChild);
     }
@@ -78,15 +71,7 @@ function update_page(destination, json_obj){
 }
 
 function back(){
-    step_count = history_array[history_array.length - 2]
-    history_array.pop()
-    while (table.hasChildNodes()) {
-        table.removeChild(table.lastChild);
-    }
-    while (button_table.hasChildNodes()) {
-        button_table.removeChild(button_table.lastChild);
-    }
-    generatePage(json_file);
+    history.back();
 }
 
 function createButton(text, destination, json_obj){
@@ -111,7 +96,7 @@ function generatePage(json_obj){
     table.appendChild(rowDiv)
 }   
     const backBtn = document.getElementById("backBtn")
-    if(history_array.length > 1){
+    if(step_count !== json_obj.Root){
         backBtn.onclick = function() {back()};
         if(backBtn.classList.contains("disabled")){backBtn.classList.remove("disabled");}
     }
