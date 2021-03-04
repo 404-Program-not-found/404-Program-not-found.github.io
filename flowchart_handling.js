@@ -49,8 +49,6 @@ function createCard(parsed_value) {
     topName.textContent = parsed_value[1];
     topName.id = "topName";
     topName.id = "card-text";
-    const font_question = document.createElement("i");
-    font_question.className = "fas fa-question-circle"
     var backgroundColor = data_tags.normal
     var outline = change_tags.false
     if (data_tags[parsed_value[3]]){
@@ -67,13 +65,12 @@ function createCard(parsed_value) {
         parsed_value[2] = "img/"+ parsed_value[2]
     }
     bottomImage.src = parsed_value[2];
-    bottomImage.className = "card-img-top"
+    bottomImage.className = "c  ard-img-top"
     bottomImage.id = "bottomImage";
     card.append(bottomImage);
 }
     cardBody.append(textTitle);
     cardBody.append(topName);
-    cardBody.append(line_link);
     card.append(cardBody)
     align.appendChild(card)
     return align
