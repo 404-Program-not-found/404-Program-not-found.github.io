@@ -6,85 +6,115 @@
       [
         "Something epic like Avatar: The Last Airbender",
         "Fullmetal Alchemist: Brotherhood",
-        "fullmetal.png"
+        "fullmetal.png",
+        "normal",
+        "false"
       ],
       [
         "Space western (Firefly, Guardians of the Galaxy)",
         "Cowboy bebop",
-        "bebop.png"
+        "bebop.png",
+        "normal",
+        "false"
       ],
       [
         "Crime drama mindgames with the Grim Reaper",
         "Death Note",
-        "deathnote.png"
+        "deathnote.png",
+        "normal",
+        "false"
       ]
     ],
     "3":[
       [
         "Popular action comedy (with drama, \"feels\")",
         "Angel Beats!",
-        "angelbeats.png"
+        "angelbeats.png",
+        "normal",
+        "false"
       ],
       [
         "Popular romance comedy (evolves into drama)",
         "Toradora!",
-        "toradora.png"
+        "toradora.png",
+        "normal",
+        "false"
       ],
       [
         "Popular workplace comedy (no drama!)",
         "The Devil is a Part-Timer!",
-        "devilmacca.png"
+        "devilmacca.png",
+        "normal",
+        "false"
       ]
     ],
     "4":[
       [
         "Psychological police in a cyberpunk setting",
         "Psycho-Pass",
-        "psychopass.png"
+        "psychopass.png",
+        "normal",
+        "false"
       ],
       [
         "Superpowers, X-Men style (Chinese Electric Batman)",
         "Darker than Black",
-        "darkblack.png"
+        "darkblack.png",
+        "normal",
+        "false"
       ],
       [
         "Time travel experiment thriller",
         "Steins;Gate",
-        "steinsgate.png"
+        "steinsgate.png",
+        "normal",
+        "false"
       ]
     ],
     "5":[
       [
         "Samurai are cool (even cooler with hip-hop music)",
         "Samurai Champloo",
-        "samurai.png"
+        "samurai.png",
+        "normal",
+        "false"
       ],
       [
         "I'VE HEARD THERE ARE SOME GIANT ROBOTS",
         "Tengen Toppa Gurren Lagann",
-        "gurrenlagann.png"
+        "gurrenlagann.png",
+        "normal",
+        "true"
       ],
       [
         "I like the Ghibli movies, especially the spirit stuff",
         "Mushishi",
-        "mushishi.png"
+        "mushishi.png",
+        "normal",
+        "false"
       ]
     ],
     "6":[
        [
         "Something gritty, edgy and with epic music",
         "Attack on Titan",
-        "attacktitan.png"
+        "attacktitan.png",
+        "normal",
+        "false"
       ],
       [
         "Arabian Nights road trip adventure, Avatar-style",
         "Magi: The Labyrinth of Magic",
-        "magilabyrinth.png"
+        "magilabyrinth.png",
+        "normal",
+        "false"
       ],
       [
         "Pirates of the Caribbean meets Diablo",
         "Shingeki no Bahamut: Genesis",
-        "shingekibahamut.png"
+        "shingekibahamut.png",
+        "normal",
+        "false"
       ]
     ]
   },

@@ -31,8 +31,10 @@ oReq.open("GET", content);
 oReq.send();
 
 
-function createCard(title, text_name, img_src) {
+function createCard(parsed_value) {
     
+    var data_tags = {"normal":"normal", "shoujo":"border-info border-3 colored-border", "shounen":"border-success border-3 colored-border", "ecchi":"border-danger border-3 colored-border"}
+    var change_tags = {"true":"changes border-3", "false":"not-change"}
     const align = document.createElement("div")
     align.className = "col-md mb-5"
     const card = document.createElement('div');
@@ -40,20 +42,30 @@ function createCard(title, text_name, img_src) {
     const cardBody = document.createElement("div");
     cardBody.className = "card-body"
     const textTitle = document.createElement("h5");
-    textTitle.textContent = title;
+    textTitle.textContent = parsed_value[0];
     textTitle.id = "textTitle"
     textTitle.className = "card-title"
     const topName = document.createElement("span");
-    topName.textContent = text_name;
+    topName.textContent = parsed_value[1];
     topName.id = "topName";
     topName.id = "card-text";
-    if(img_src){
+    var backgroundColor = data_tags.normal
+    var outline = change_tags.false
+    if (data_tags[parsed_value[3]]){
+       backgroundColor = data_tags[parsed_value[3]]
+    };
+    if (change_tags[parsed_value[4]]){
+        outline = change_tags[parsed_value[4]]
+    };
+    card.classList.add(...backgroundColor.split(" "));
+    card.classList.add(...outline.split(" "));
+    if(parsed_value[2]){
     const bottomImage = document.createElement("img");
-    if(!img_src.includes("img/")){
-        img_src = "img/"+img_src
+    if(!parsed_value[2].includes("img/")){
+        parsed_value[2] = "img/"+ parsed_value[2]
     }
-    bottomImage.src = img_src;
-    bottomImage.className = "card-img-top"
+    bottomImage.src = parsed_value[2];
+    bottomImage.className = "c  ard-img-top"
     bottomImage.id = "bottomImage";
     card.append(bottomImage);
 }
@@ -101,7 +113,7 @@ function generatePage(json_obj){
         const rowDiv = document.createElement('div')
         rowDiv.className = "row"
         for (var i in step_dict){
-        rowDiv.appendChild(createCard(step_dict[i][0], step_dict[i][1], step_dict[i][2]))
+        rowDiv.appendChild(createCard(step_dict[i]))
     }
     table.appendChild(rowDiv)
 }   
