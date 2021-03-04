@@ -35,6 +35,7 @@ function createCard(parsed_value) {
     
     var data_tags = {"normal":"normal", "shoujo":"border-info border-3 colored-border", "shounen":"border-success border-3 colored-border", "ecchi":"border-danger border-3 colored-border"}
     var change_tags = {"true":"changes border-3", "false":"not-change"}
+    var tooltip_tags = {"normal":"", "shoujo":"targets female audiences (usually include themes of romance and friendship)", "shounen":"targets male audiences (usually aims to be adventurous and energetic)", "ecchi":"contains mild NSFW content", "true":"contains a plot twist or a slow start", "false":""}
     const align = document.createElement("div")
     align.className = "col-md mb-5"
     const card = document.createElement('div');
@@ -51,11 +52,14 @@ function createCard(parsed_value) {
     topName.id = "card-text";
     var backgroundColor = data_tags.normal
     var outline = change_tags.false
+    var hint_string = []
     if (data_tags[parsed_value[3]]){
        backgroundColor = data_tags[parsed_value[3]]
+       hint_string.push(tooltip_tags[parsed_value[3]])
     };
     if (change_tags[parsed_value[4]]){
         outline = change_tags[parsed_value[4]]
+        hint_string.push(tooltip_tags[parsed_value[4]])
     };
     card.classList.add(...backgroundColor.split(" "));
     card.classList.add(...outline.split(" "));
@@ -65,14 +69,23 @@ function createCard(parsed_value) {
         parsed_value[2] = "img/"+ parsed_value[2]
     }
     bottomImage.src = parsed_value[2];
-    bottomImage.className = "c  ard-img-top"
+    bottomImage.className = "card-img-top"
     bottomImage.id = "bottomImage";
     card.append(bottomImage);
 }
     cardBody.append(textTitle);
     cardBody.append(topName);
+    if(card.classList.contains("border-3")){
+        const inline_hint = document.createElement('span');
+        inline_hint.setAttribute("data-bs-toggle", "tooltip");
+        inline_hint.className = "bi bi-question-circle";
+        inline_hint.id = "tooltip";
+        inline_hint.setAttribute("data-bs-placement", "bottom");
+        inline_hint.setAttribute("data-bs-original-title", `This show ${hint_string.filter(item => item).join(" and ")}`);
+        cardBody.append(inline_hint);
+    }
     card.append(cardBody)
-    align.appendChild(card)
+    align.appendChild(card) 
     return align
 }
 
@@ -135,5 +148,9 @@ function generatePage(json_obj){
 }
     document.getElementById("mainTitle").innerHTML = null
     document.getElementById("mainTitle").innerHTML = json_obj["Title"][step_count].replace(/(\r\n|\r|\n)/g, '<br>');
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
     
 }
