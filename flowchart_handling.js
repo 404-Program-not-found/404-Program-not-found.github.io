@@ -47,6 +47,7 @@ function createCard(title, text_name, img_src) {
     topName.textContent = text_name;
     topName.id = "topName";
     topName.id = "card-text";
+    if(img_src){
     const bottomImage = document.createElement("img");
     if(!img_src.includes("img/")){
         img_src = "img/"+img_src
@@ -54,9 +55,10 @@ function createCard(title, text_name, img_src) {
     bottomImage.src = img_src;
     bottomImage.className = "card-img-top"
     bottomImage.id = "bottomImage";
+    card.append(bottomImage);
+}
     cardBody.append(textTitle);
     cardBody.append(topName);
-    card.append(bottomImage);
     card.append(cardBody)
     align.appendChild(card)
     return align

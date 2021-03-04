@@ -22,6 +22,11 @@ body {
   .navbar a {
     word-wrap: break-word;
     padding: 0 16px;
+    transition: 0.3s;
+  }
+
+  .navbar :not(.active).nav-link:hover {
+    color: #ffffff !important;
   }
 
   .navbar a:hover {
@@ -37,9 +42,18 @@ body {
 
 #mainTitle{
   display: flex;
-  font-size: 63px;
+  font-size: 6.5vmin;
   justify-content: center;
   align-items: center;
+}
+
+#backBtn{
+  transition: 0.3s;
+  border:none;
+}
+
+#backBtn:hover{
+  background-color: rgb(201, 201, 201);
 }
 
 #buttonChoices{
@@ -112,5 +126,8 @@ body {
   }
   .navbar-brand{
     font-size: 0.75rem;
+  }
+  #mainTitle{
+    font-size: 6.5vmax;
   }
 }

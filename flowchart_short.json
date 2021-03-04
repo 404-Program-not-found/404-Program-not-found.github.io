@@ -2,91 +2,91 @@
   "Root":"1",
 
   "Nodes": {
-    "2": {
-      "1": [
+    "2":[
+      [
         "Something epic like Avatar: The Last Airbender",
         "Fullmetal Alchemist: Brotherhood",
         "fullmetal.png"
       ],
-      "2": [
+      [
         "Space western (Firefly, Guardians of the Galaxy)",
         "Cowboy bebop",
         "bebop.png"
       ],
-      "3": [
+      [
         "Crime drama mindgames with the Grim Reaper",
         "Death Note",
         "deathnote.png"
       ]
-    },
-    "3": {
-      "1": [
+    ],
+    "3":[
+      [
         "Popular action comedy (with drama, \"feels\")",
         "Angel Beats!",
         "angelbeats.png"
       ],
-      "2": [
+      [
         "Popular romance comedy (evolves into drama)",
         "Toradora!",
         "toradora.png"
       ],
-      "3": [
+      [
         "Popular workplace comedy (no drama!)",
         "The Devil is a Part-Timer!",
         "devilmacca.png"
       ]
-    },
-    "4": {
-      "1": [
+    ],
+    "4":[
+      [
         "Psychological police in a cyberpunk setting",
         "Psycho-Pass",
         "psychopass.png"
       ],
-      "2": [
+      [
         "Superpowers, X-Men style (Chinese Electric Batman)",
         "Darker than Black",
         "darkblack.png"
       ],
-      "3": [
+      [
         "Time travel experiment thriller",
         "Steins;Gate",
         "steinsgate.png"
       ]
-    },
-    "5": {
-      "1": [
+    ],
+    "5":[
+      [
         "Samurai are cool (even cooler with hip-hop music)",
         "Samurai Champloo",
         "samurai.png"
       ],
-      "2": [
+      [
         "I'VE HEARD THERE ARE SOME GIANT ROBOTS",
         "Tengen Toppa Gurren Lagann",
         "gurrenlagann.png"
       ],
-      "3": [
+      [
         "I like the Ghibli movies, especially the spirit stuff",
         "Mushishi",
         "mushishi.png"
       ]
-    },
-    "6": {
-      "1": [
+    ],
+    "6":[
+       [
         "Something gritty, edgy and with epic music",
         "Attack on Titan",
         "attacktitan.png"
       ],
-      "2": [
+      [
         "Arabian Nights road trip adventure, Avatar-style",
         "Magi: The Labyrinth of Magic",
         "magilabyrinth.png"
       ],
-      "3": [
+      [
         "Pirates of the Caribbean meets Diablo",
         "Shingeki no Bahamut: Genesis",
         "shingekibahamut.png"
       ]
-    }
+    ]
   },
   "Title": {
     "1": "Looking for you first anime? Press start!",
