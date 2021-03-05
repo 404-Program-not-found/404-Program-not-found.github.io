@@ -16,7 +16,7 @@ function reqListener () {
 }
 
 window.onpopstate = function(event) {
-    if (event.state == null || event.state.step == json_file.Root){
+    if (event.state == null){
         step_count = json_file.Root;
         generatePage(json_file)}
     else if(event.state.step_destination){
@@ -91,6 +91,9 @@ function createCard(parsed_value) {
 
 function update_page(destination, json_obj){
     window.scrollTo(0, 0);
+    if (step_count == json_file.Root){
+        history.pushState({"step":step_count, "step_destination":step_count}, "", window.location);
+    }
     history.pushState({"step":step_count, "step_destination":destination}, "", window.location);
     console.log({"step":step_count});
     step_count = destination;
