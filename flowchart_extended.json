@@ -6,44 +6,34 @@
       [
         "Ping Pong",
         "Ping pong anime with a unique art style",
-        "pingpong.jpg",
-        "normal",
-        "false"
+        "pingpong.jpg"
       ]
     ],
     "sports-classic":[
       [
         "Hajime No Ippo",
         "Self improvemnt by boxing",
-        "hajimeippo.png",
-        "normal",
-        "false"
+        "hajimeippo.png"
       ],
       [
         "Initial D",
         "Street racing with a cheap toyta from the 90s",
-        "initiald.jpg",
-        "normal",
-        "false"
+        "initiald.jpg"
       ],
       [
         "One outs",
         "baseball with gambling",
-        "oneouts.jpg",
-        "normal",
-        "false"
+        "oneouts.jpg"
       ],
       [
         "Major",
         "baseball",
-        "major.jpg",
-        "normal"
+        "major.jpg"
       ],
       [
         "Hikaru no Go",
         "Competitive Go (asian tabletop strategy game)",
-        "hikarunogo.jpg",
-        "normal"
+        "hikarunogo.jpg"
       ]
     ],
     "sports-fresh":[
@@ -51,106 +41,87 @@
         "Kuroko no Basket",
         "Basketball tournament arc",
         "kurokobasket.jpg",
-        "shounen",
-        "false"
+        "shounen"
       ],
       [
         "Ace of Diamond",
         "Baseball",
-        "aceofdiamond.jpg",
-        "normal",
-        "false"
+        "aceofdiamond.jpg"
       ],
       [
         "Yowamushi Pedal",
         "Cycling",
         "yowamushi.png",
-        "shounen",
-        "false"
+        "shounen"
       ],
       [
         "baby steps",
         "Math nerd plays tennis",
-        "babysteps.png",
-        "normal",
-        "false"
+        "babysteps.png"
       ],
       [
         "Haikyuu!",
         "Volleyball can be cool too... Right?",
         "haikyuu.jpg",
-        "shounen",
-        "false"
+        "shounen"
       ],
       [
         "Free!",
         "Swimming - and abs! Lots, and lots of abs",
         "free.jpg",
-        "shoujo",
-        "false"
+        "shoujo"
       ],
       [
         "Eyeshield 21",
         "It's not everyday american football is featured in an anime",
-        "eyeshield.jpg",
-        "normal",
-        "false"
+        "eyeshield.jpg"
       ],
       [
         "Chihayafuru",
         "Japanese poerty card game that focuses on character development, give it a watch",
         "chihayafuru.jpeg",
-        "shoujo",
-        "false"
+        "shoujo"
       ]
     ],
     "action-fun":[
       [
         "FCFL",
         "For when you are ready for the joyride",
-        "fcfl.jpg",
-        "normal",
-        "false"
+        "fcfl.jpg"
       ],
       [
         "Kill La kill",
         "For when you are really ready for the joyride",
         "killlakill.jpg",
-        "ecchi",
-        "false"
+        "ecchi"
       ],
       [
         "Gurren Lagann",
         "You could say this show is... \"Mecha fun\"",
-        "gurrenlagann.jpg",
-        "false"
+        "gurrenlagann.jpg"
       ],
       [
         "No game no life",
         "Gamers thrown into a world of games - excellent art",
         "nogamenolife.jpg",
-        "ecchi",
-        "false"
+        "ecchi"
       ],
       [
         "Symphogear",
         "Power Armour fueled by singing J-pop - beware: J-pop",
-        "symphogear.jpg",
-        "false"
+        "symphogear.jpg"
       ],
       [
         "Food wars",
         "Kitchen Nightmares if it was a 1-on-1 tournament arc. Also takes \"food porn\" a little too literally",
         "foodwars.jpg",
-        "ecchi",
-        "false"
+        "ecchi"
       ],
       [
         "Panty & Stocking",
         "Ever thought powerpuff girls was a little too G rated?",
         "pantystocking.jpg",
-        "ecchi",
-        "false"
+        "ecchi"
       ],
       [
         "Samurai Flamenco",
@@ -163,8 +134,7 @@
         "Highschool of the Dead",
         "I.. I watch it for the plot! Yeah! The plot about the zombie apocalypse!",
         "highschooldead.jpg",
-        "ecchi",
-        "false"
+        "ecchi"
       ],
       [
         "Cross Ange",
@@ -176,49 +146,39 @@
       [
         "JoJo's Bizzare Adventure",
         "You expected a summary! But it was me, Dio! Seriously though, give it a watch",
-        "jojo.jpeg",
-        "normal",
-        "false"
+        "jojo.jpeg"
       ]
     ],
     "action-completed-extreme-modern":[
       [
         "Black Lagoon",
         "Thailand rouge mercenary group",
-        "blacklagoon.jpg",
-        "normal",
-        "false"
+        "blacklagoon.jpg"
       ],
       [
         "Phantom: Requiem for the Phantom",
         "Mafia, now with genderflipped agent 47!",
-        "phantomrequiem.jpg",
-        "normal",
-        "false"
+        "phantomrequiem.jpg"
       ]
     ],
     "action-completed-extreme-superpowers":[
       [
         "Darker than Black",
         "Superpowers, X-Men style (Chinese Electric Batman)",
-        "darkblack.png",
-        "normal",
-        "false"
+        "darkblack.png"
       ]
     ],
     "action-completed-extreme-med-fantasy":[
       [
         "Shingeki no Bahamut: Genesis",
         "Bounty hunters caught in a power struggle between  angels, humans and demons",
-        "bahamutgenesis.jpg",
-        "normal",
-        "false"
+        "bahamutgenesis.jpg"
       ],
       [
         "Slayers",
         "Treasure hunting sorceress who kills monsters and fights bandets - An old classic",
         "slayers.jpg",
-        "normal",
+        
         "true"
       ]
     ],
@@ -226,131 +186,248 @@
       [
         "Zetsuen no Tempest",
         "Uncovering mysteries of a tragic past whilst preventing doomsday: now with 100% more magic",
-        "zetsuen.jpg",
-        "normal",
-        "false"
+        "zetsuen.jpg"
       ],
       [
         "Katekyo Hitman Reborn!",
         "Supernatual mafia shenanigans",
-        "katekyohitman.jpg",
-        "normal",
-        "false"
+        "katekyohitman.jpg"
       ],
       [
         "Shingeki no Bahamut: Genesis",
         "Romance, parallel universes, and an existential threat",
-        "shakuganshana.jpg",
-        "normal",
-        "false"
+        "shakuganshana.jpg"
       ]
     ],
     "action-completed-extreme-sprit":[
-      ["Yuu☆Yuu☆Hakusho", "Sprit detective with an intresting hook", "yuhakusho.jpg", 
-        "normal",
-        "false"]
+      ["Yuu☆Yuu☆Hakusho", "Sprit detective with an intresting hook", "yuhakusho.jpg"]
     ],
     "action-completed-extreme-magical-girls":[
-      ["Sailor Moon", "Protecting the universe from threats of darkness with the power of friendship, sacrifice, and love!", "sailormoon.jpg", "shoujo","false"],
-      ["Cardcaptor Sakura", "Cleaning up an accident of her own cause with newly found magical powers, a romance comedy at heart", "cardcaptor.png", "shoujo","false"],
-      ["Mahou Shoujo Lyrical Nanoha", "Music, battles, animation, story - this has got it all", "mahounanoha.jpg", "normal", "false"]
+      ["Sailor Moon", "Protecting the universe from threats of darkness with the power of friendship, sacrifice, and love!", "sailormoon.jpg", "shoujo"],
+      ["Cardcaptor Sakura", "Cleaning up an accident of her own cause with newly found magical powers, a romance comedy at heart", "cardcaptor.png", "shoujo"],
+      ["Mahou Shoujo Lyrical Nanoha", "Music, battles, animation, story - this has got it all", "mahounanoha.jpg"]
     ],
     "action-scifi-shootout":[
-      ["Gungrave","Based on a ps2 thrid person shooter of the same name, space mafia shootouts","gungrave.jpg", "normal","false"],
-      ["Trigun","A story about a legendary gunslinger with a $60,000,000,000 bounty on his head, and his companions","trigun.jpg", "normal","true"],
-      ["Seihou Bukyou Outlaw Star","Braving the final frontier adn fighting bounty hunters, outlaws, and much more along the way.","outlawstar.jpg", "normal","false"]
+      ["Gungrave","Based on a ps2 thrid person shooter of the same name, space mafia shootouts","gungrave.jpg"],
+      ["Trigun","A story about a legendary gunslinger with a $60,000,000,000 bounty on his head, and his companions","trigun.jpg", "true"],
+      ["Seihou Bukyou Outlaw Star","Braving the final frontier adn fighting bounty hunters, outlaws, and much more along the way.","outlawstar.jpg"]
     ],
     "action-scifi-mecha":[
-      ["Eureka Seven", "roadtrip mecha anime with great animation and music, watch for eyecandy", "eurekaseven.jpg", "normal","false"],
-      ["Big O", "Neo-Noir batman with a big mech", "bigo.jpg", "normal","false"],
-      ["Code Geass", "Alternate history and a giant mecha", "geass.jpg", "shounen","false"],
-      ["Gunbuster", "Pacific rim the anime?", "gunbuster.jpg", "normal","false"],
-      ["Full Metal Panic", "Comdey in MY MECHA ANIME? No way!", "fullmetal.jpg", "normal","false"],
-      ["Vision of Escaflowne", "Romance, Dragons, and transported to another world", "escaflowne.jpg", "normal","false"],
-      ["Macross", "Sci-fi Serenade", "macross.jpg", "normal","false"]
+      ["Eureka Seven", "roadtrip mecha anime with great animation and music, watch for eyecandy", "eurekaseven.jpg"],
+      ["Big O", "Neo-Noir batman with a big mech", "bigo.jpg"],
+      ["Code Geass", "Alternate history and a giant mecha", "geass.jpg", "shounen"],
+      ["Gunbuster", "Pacific rim the anime?", "gunbuster.jpg"],
+      ["Full Metal Panic", "Comdey in MY MECHA ANIME? No way!", "fullmetal.jpg"],
+      ["Vision of Escaflowne", "Romance, Dragons, and transported to another world", "escaflowne.jpg"],
+      ["Macross", "Sci-fi Serenade", "macross.jpg"]
     ],
     "action-completed-extreme-punching":[
-      ["Kenichi", "Looking for fights with and rivalries with an intresting execution?", "kenichi.jpg", "normal","false"]
+      ["Kenichi", "Looking for fights with and rivalries with an intresting execution?", "kenichi.jpg"]
     ],
     "action-completed-extreme-samurai":[
       [
         "Samurai Champloo",
         "Samurai are cool (even cooler with hip-hop music)",
-        "samurai.png",
-        "normal",
-        "false"
+        "samurai.png"
       ],
       [
         "Rurouni Kenshin / Samurai X",
         "Meiji era samurai on a quest towards redemption",
-        "kenshin.jpg",
-        "normal",
-        "false"
+        "kenshin.jpg"
       ]
     ],
     "action-adventure-road":[
       [
         "Cowboy bebop",
         "Space opera jazz",
-        "bebop.png",
-        "normal",
-        "false"
+        "bebop.png"
       ],
       [
         "Tengen Toppa Gurren Lagann",
         "Journey to manhood through the mecha genre",
         "gurrenlagann.png",
-        "normal",
+        
         "true"
       ],
       [
         "Fullmetal Alchemist: Brotherhood",
         "Steampunk world with scientific magic",
-        "fullmetal.png",
-        "normal",
-        "false"
+        "fullmetal.png"
       ],
       [
         "Samurai Champloo",
         "Samurai are cool (even cooler with hip-hop music)",
-        "samurai.png",
-        "normal",
-        "false"
+        "samurai.png"
       ],
       [
         "Rurouni Kenshin / Samurai X",
         "Meiji era samurai on a quest towards redemption",
-        "kenshin.jpg",
-        "normal",
-        "false"
+        "kenshin.jpg"
       ],
       [
         "Baccano",
         "Tarantino-esque journey on a train to New York",
-        "baccano.jpg",
-        "normal",
-        "false"
+        "baccano.jpg"
       ],
       [
         "Katanagatari",
         "Talking swords. The show has a unique artstyle",
-        "katanagatari.jpg",
-        "normal",
-        "false"
+        "katanagatari.jpg"
       ],
       [
         "Last Exile",
         "Dogfighting using airship type aircrafts with WW2 technology",
-        "lastexile.jpg",
-        "normal",
-        "false"
+        "lastexile.jpg"
       ],
       [
         "Twelve Kingdoms",
         "Spirited away in a fantasy drama",
         "tkingdoms.jpg",
-        "normal",
         "true"
+      ]
+    ],
+    "action-incomplete-hundreds":[
+      [
+        "One Piece",
+        "Finding the greatest treasure left by the world's most famous pirate king - one episode at a time",
+        "onepiece.jpg"
+      ],
+      [
+        "Naruto",
+        "What some ninja fun? Naruto's for you!",
+        "naruto.jpg"
+      ],
+      [
+        "Bleach",
+        "Supernatural spirit samurai",
+        "bleach.jpeg"
+      ],
+      [
+        "Fairy Tail",
+        "My Little Wizard: Friendship is magic",
+        "fairytail.jpg",
+        "ecchi"
+      ],
+      [
+        "Pretty Cure",
+        "Magical girl shenanigans",
+        "prettycure.jpg",
+        "shoujo"
+      ],
+      [
+        "Mobile Suit Gundam",
+        "A classic of Mecha anime",
+        "gundam.jpg"
+      ],
+      [
+        "Hunter x Hunter (2011)",
+        "You want superpowers? We got superpowers!",
+        "hunterxhunter.jpg",
+        "true"
+      ],
+      [
+        "Dragon Ball",
+        "THE classic of anime",
+        "dragonball.png"
+      ]
+    ],
+    "action-incomplete-game":[
+      [
+        "Log Horizon",
+        "A story of political intrigue, game mechanics, logistics, and strategy",
+        "loghorizon.jpeg"
+      ],
+      [
+        "Sword Art Online",
+        "Romance, swordfighting, and cool animation - Watch the first season and decide its worth yourself",
+        "SAO.jpg"
+      ],
+      [
+        "Overlord",
+        "Worldbuilding with an anime — DnD the Anime",
+        "overlord.jpg"
+      ],
+      [
+        "SAO alternative: Gun Gale Online",
+        "A show that focuses on having fun, making friends, and playing games to escape.",
+        "ggo.jpg"
+      ]
+    ],
+    "action-incomplete-space":[
+      [
+      "Kings of Sidonia",
+      "Defending a seedship against aliens - 3D animation",
+      "sidonia.jpg"
+      ]
+    ],
+    "action-incomplete-fantasy":[
+      [
+      "Attack on Titan",
+      "Mankind's last stand",
+      "attacktitan.png",
+      "shounen"
+      ],
+      [
+        "Magi: The Labyrinth of Magic",
+        "Arabian Nights road trip adventure, Avatar-style",
+        "magilabyrinth.png",
+        "shounen"
+      ],
+      [
+        "Akatsuki no Yona",
+        "Dragons, adventure and romance",
+        "akatsuki.jpg",
+        "shoujo"
+      ],
+      [
+        "The Seven Deadly Sins",
+        "Medieval knights betrayed by their home country",
+        "sevensins.jpg",
+        "shounen"
+      ],
+      [
+        "Little Witch Academia",
+        "Anime Hogwarts with fantastic animation",
+        "littlewitch.jpeg"
+      ],
+      [
+        "The Irregular at Magic High School",
+        "Futuristic hogwarts",
+        "irregularschool.png"
+      ],
+      [
+        "Soul Eater",
+        "Sprit weapons and literal death",
+        "souleater.jpg"
+      ]
+    ],
+    "action-incomplete-city":[
+      [
+        "Durarara",
+        "Supernatural gang wars",
+        "durarara.jpg",
+        "shounen"
+      ],
+      [
+        "A Certain Scientific Railgun",
+        "X-Men schoolgirls — Related: A Certain Magical Index",
+        "railgun.jpg",
+        "ecchi"
+      ],
+      [
+        "Yozakura Quartet: Hana no Uta",
+        "Life in a sprit town",
+        "yozakuraquartet.jpg"
+      ],
+      [
+        "Noragami",
+        "Sprit hunting",
+        "noragami.jpg"
+      ],
+      [
+        "Blue Exorcist",
+        "Demon hunting",
+        "blueexorcist.jpg"
       ]
     ]
 
@@ -377,7 +454,14 @@
     "action-scifi-mecha": "Giant fighting robots! What's not to like?",
     "action-completed-extreme-punching": "Sometimes a dropkick is better than a gun",
     "action-completed-extreme-samurai": "Believe the ways of the samurai... is that right?",
-    "action-adventure-road":"So many choices, so little time"
+    "action-adventure-road":"So many choices, so little time",
+    "action-incomplete":"How many episodes?",
+    "action-incomplete-hundreds":"Anime with hundreds of episodes - See you next year!",
+    "action-incomplete-few":"Setting?",
+    "action-incomplete-game":"Choose your MMO:",
+    "action-incomplete-space":"The final frontier, brought to life through art",
+    "action-incomplete-fantasy":"Fantastical fantasy animes",
+    "action-incomplete-city":"What drives your plot?"
   },
   "Edges": {
     "start":[
@@ -505,6 +589,34 @@
         "Destination": "action-scifi-mecha",
         "Text": "Mecha"
       }
+    ],
+    "action-incomplete":[
+      {
+        "Destination": "action-incomplete-hundreds",
+        "Text": "Hundreds!"
+      },
+      {
+        "Destination": "action-incomplete-few",
+        "Text": "A few (usually 12 or 24)"
+      }
+    ],
+    "action-incomplete-few":[
+      {
+        "Destination": "action-incomplete-game",
+        "Text": "Video games"
+      },
+      {
+        "Destination": "action-incomplete-space",
+        "Text": "Space"
+      },
+      {
+        "Destination": "action-incomplete-fantasy",
+        "Text": "Fantasy"
+      },
+      {
+        "Destination": "action-incomplete-city",
+        "Text": "Big city life"
+      }
     ]
   }
-}
+} 

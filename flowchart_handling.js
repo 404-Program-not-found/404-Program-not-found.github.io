@@ -53,13 +53,15 @@ function createCard(parsed_value) {
     var backgroundColor = data_tags.normal
     var outline = change_tags.false
     var hint_string = []
-    if (data_tags[parsed_value[3]]){
-       backgroundColor = data_tags[parsed_value[3]]
-       hint_string.push(tooltip_tags[parsed_value[3]])
+    if (data_tags[parsed_value[3]] || data_tags[parsed_value[4]]){
+        var i = data_tags[parsed_value[3]] ? parsed_value[3]:parsed_value[4]
+       backgroundColor = data_tags[i]
+       hint_string.push(tooltip_tags[i])
     };
-    if (change_tags[parsed_value[4]]){
-        outline = change_tags[parsed_value[4]]
-        hint_string.push(tooltip_tags[parsed_value[4]])
+    if (change_tags[parsed_value[4]] || change_tags[parsed_value[3]]){
+        var i = change_tags[parsed_value[3]] ? parsed_value[3]: parsed_value[4];
+        outline = (change_tags[i]);
+        hint_string.push(tooltip_tags[i]);
     };
     card.classList.add(...backgroundColor.split(" "));
     card.classList.add(...outline.split(" "));
