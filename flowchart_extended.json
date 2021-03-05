@@ -96,9 +96,10 @@
         "ecchi"
       ],
       [
-        "Gurren Lagann",
-        "You could say this show is... \"Mecha fun\"",
-        "gurrenlagann.jpg"
+        "Tengen Toppa Gurren Lagann",
+        "Journey to manhood through the mecha genre",
+        "gurrenlagann.png",
+        "true"
       ],
       [
         "No game no life",
@@ -246,7 +247,6 @@
         "Tengen Toppa Gurren Lagann",
         "Journey to manhood through the mecha genre",
         "gurrenlagann.png",
-        
         "true"
       ],
       [
