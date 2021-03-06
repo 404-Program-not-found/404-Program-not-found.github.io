@@ -494,6 +494,22 @@
         "Diplomat tries to keep faries from accidentally destroying humanity in search of candy",
         "humandecline.jpg"
       ]
+    ],
+    "romcom-starter":[
+      [
+        "Popular romance comedy (evolves into drama)",
+        "Toradora!",
+        "toradora.png",
+        "normal",
+        "false"
+      ]
+    ],
+    "romcom-anti":[
+      [
+        "Yahari Ore no Seishun Love Comedy wa Machigatteiru.",
+        "Antisocial protagonist is forced is forced into being social",
+        "oregairu.jpg"
+      ]
     ]
 
   },
@@ -510,7 +526,8 @@
     "action-incomplete-game":"Choose your MMO:",
     "action-incomplete-city":"What drives your plot?",
     "comedy":"What kind of comedy?",
-    "comedy-parody":"Making fun of:"
+    "comedy-parody":"Making fun of:",
+    "comedy-romance":"Theme?"
   },
   "Edges": {
     "start":[
@@ -697,6 +714,72 @@
       {
         "Destination": "parody-society",
         "Text": "Society"
+      }
+    ],
+    "comedy-romance":[
+      {
+        "Destination": "romcom-starter",
+        "Text": "For starters"
+      },
+      {
+        "Destination": "romcom-anti",
+        "Text": "Anti-Romance"
+      },
+      {
+        "Destination": "romcom-manga",
+        "Text": "Drawing Manga"
+      },
+      {
+        "Destination": "romcom-meta",
+        "Text": "Meta Humor"
+      },
+      {
+        "Destination": "romcom-college",
+        "Text": "College-aged cast"
+      },
+      {
+        "Destination": "romcom-shoujo",
+        "Text": "Female-Oriented (shoujo)"
+      },
+      {
+        "Destination": "romcom-sitcom",
+        "Text": "Sitcom"
+      },
+      {
+        "Destination": "romcom-harem",
+        "Text": "Harem"
+      },
+      {
+        "Destination": "romcom-Incest",
+        "Text": "Incest"
+      },
+      {
+        "Destination": "romcom-gay",
+        "Text": "Gay couples"
+      },
+      {
+        "Destination": "romcom-classic",
+        "Text": "Old Classic"
+      },
+      {
+        "Destination": "romcom-sports",
+        "Text": "Sports"
+      },
+      {
+        "Destination": "romcom-win-win",
+        "Text": "Everybody wins"
+      },
+      {
+        "Destination": "romcom-supernerd",
+        "Text": "Delusional Supernerds"
+      },
+      {
+        "Destination": "romcom-SoL",
+        "Text": "Slice of life turned drama"
+      },
+      {
+        "Destination": "comedy-lighthearted-romcom",
+        "Text": "Lighthearted comdey with romance and supernatural stuff"
       }
     ]
   }
