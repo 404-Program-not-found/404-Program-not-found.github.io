@@ -91,7 +91,7 @@
       ],
       [
         "Kill La kill",
-        "For when you are really ready for the joyride",
+        "People with superpowers fighting against other people with superpoweres in a high school",
         "killlakill.jpg",
         "ecchi"
       ],
@@ -114,7 +114,7 @@
       ],
       [
         "Food wars",
-        "Kitchen Nightmares if it was a 1-on-1 tournament arc. Also takes \"food porn\" a little too literally",
+        "1-on-1 Kitchen Nightmares. Also takes \"food porn\" a little too literally",
         "foodwars.jpg",
         "ecchi"
       ],
@@ -223,7 +223,7 @@
       ["Macross", "Sci-fi Serenade", "macross.jpg"]
     ],
     "action-completed-extreme-punching":[
-      ["Kenichi", "Looking for fights with and rivalries with an intresting execution?", "kenichi.jpg"]
+      ["Kenichi", "Looking for fights with and rivalries with an interesting execution?", "kenichi.jpg"]
     ],
     "action-completed-extreme-samurai":[
       [
@@ -429,6 +429,71 @@
         "Demon hunting",
         "blueexorcist.jpg"
       ]
+    ],
+    "parody-cliche":[
+      [
+        "The Melancholy of Haruhi Suzumiya",
+        "School club about the supernatural",
+        "suzumiya.jpg"
+      ],
+      [
+        "Lucky☆Star",
+        "the daily lives of four cute high school girls as they make friends and making obersvations of the world around them",
+        "luckystar.jpg"
+      ],
+      [
+        "Binbougami ga",
+        "Comedic battle to keep the protagonist's luck",
+        "binbougami.jpg"
+      ]
+    ],
+    "parody-action":[
+      [
+        "Gintama",
+        "Aliens invading feudal japan",
+        "gintama.jpg",
+        "shounen",
+        "true"
+      ],
+      [
+        "Kill La kill",
+        "People with superpowers fighting against other people with superpoweres in a high school",
+        "killlakill.jpg",
+        "ecchi"
+      ],
+      [
+        "Samurai Flamenco",
+        "A tribute to superheros - Starts off Kick-ass, then... It changes.",
+        "samflam.jpg",
+        "shounen",
+        "true"
+      ]
+    ],
+    "parody-romcom":[
+      [
+        "Gekkan Shoujo Nozaki-kun",
+        "Romance turned into misundersanding turned into becoming a mangaka's assistant",
+        "gekkanshoujo.jpg"
+      ],
+      [
+        "Saekano: How to Raise a Boring Girlfriend",
+        "The making of a dating sim turned into actual romance",
+        "saekano.jpg",
+        "ecchi"
+      ],
+      [
+        "The World God Only Knows",
+        "Dating sim obsessed otaku actually dates real girls",
+        "worldgodknows.jpg",
+        "shounen"
+      ]
+    ],
+    "parody-society":[
+      [
+        "Humanity has declined",
+        "Diplomat tries to keep faries from accidentally destroying humanity in search of candy",
+        "humandecline.jpg"
+      ]
     ]
 
   },
@@ -436,32 +501,16 @@
     "start":"I'm looking for something...",
     "action-adventure":"Action / Adventure\nWhat Kind of Action?",
     "sports":"Oldschool or new?",
-    "sports-fresh-classic":"Fresh sports classics",
-    "sports-classic":"The classics of sports anime",
-    "sports-fresh":"Fresh sports anime right off the grill",
     "action-fun":"Pick your poison",
     "fights":"Finished story?",
     "action-completed":"Action or adventure?",
     "action-completed-extreme":"Supernatural?",
-    "action-completed-extreme-modern":"For all your explosion needs!",
-    "action-completed-extreme-superpowers":"Placeholder text. Will think of one later",
-    "action-completed-extreme-med-fantasy":"Dungeon and Dragons and Magic and Demons",
-    "action-completed-extreme-urb-fantasy":"Spice up modernity!",
-    "action-completed-extreme-sprit":"Who you're gonna call?",
-    "action-completed-extreme-magical-girls":"With the Power of Love, watch these anime!",
     "action-completed-extreme-scifi":"Type of Sci-fi?",
-    "action-scifi-shootout":"Space cowboys are cool",
-    "action-scifi-mecha": "Giant fighting robots! What's not to like?",
-    "action-completed-extreme-punching": "Sometimes a dropkick is better than a gun",
-    "action-completed-extreme-samurai": "Believe the ways of the samurai... is that right?",
-    "action-adventure-road":"So many choices, so little time",
-    "action-incomplete":"How many episodes?",
-    "action-incomplete-hundreds":"Anime with hundreds of episodes - See you next year!",
     "action-incomplete-few":"Setting?",
     "action-incomplete-game":"Choose your MMO:",
-    "action-incomplete-space":"The final frontier, brought to life through art",
-    "action-incomplete-fantasy":"Fantastical fantasy animes",
-    "action-incomplete-city":"What drives your plot?"
+    "action-incomplete-city":"What drives your plot?",
+    "comedy":"What kind of comedy?",
+    "comedy-parody":"Making fun of:"
   },
   "Edges": {
     "start":[
@@ -616,6 +665,38 @@
       {
         "Destination": "action-incomplete-city",
         "Text": "Big city life"
+      }
+    ],
+    "comedy":[
+      {
+        "Destination": "comedy-life",
+        "Text": "Daily Life"
+      },
+      {
+        "Destination": "comedy-romance",
+        "Text":"Romace Comedy"
+      },
+      {
+        "Destination": "comedy-parody",
+        "Text":"Parody"
+      }
+    ],
+    "comedy-parody":[
+      {
+        "Destination": "parody-cliche",
+        "Text": "Anime Cliches"
+      },
+      {
+        "Destination": "parody-action",
+        "Text": "Action series"
+      },
+      {
+        "Destination": "parody-romcom",
+        "Text": "Romance comedies"
+      },
+      {
+        "Destination": "parody-society",
+        "Text": "Society"
       }
     ]
   }
